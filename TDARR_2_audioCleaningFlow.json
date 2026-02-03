@@ -9,39 +9,39 @@
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "YHHJeAOmS",
       "position": {
         "x": 1184.3394372258558,
         "y": -187.55324783183448
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "🎧 Audio has not been cleaned yet. Let's start off by getting rid of languages we don't need.",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "9MQOBYr9B",
       "position": {
         "x": 1136.4949035159434,
         "y": 117.0209568875323
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "It's not anime, but Is it a movie?",
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "{{{args.userVariables.library.name}}}",
+        "value": "MOVIE"
+      },
+      "fpEnabled": true,
       "id": "vc-3www5x",
       "position": {
         "x": 1331.5137398809952,
         "y": 277.94155984904415
-      },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "{{{args.userVariables.library.name}}}",
-        "value": "MOVIE"
       }
     },
     {
@@ -49,12 +49,6 @@
       "sourceRepo": "Community",
       "pluginName": "runClassicTranscodePlugin",
       "version": "2.0.0",
-      "id": "9IqHpqoHI",
-      "position": {
-        "x": 1259.9997228048965,
-        "y": 406.57243743681386
-      },
-      "fpEnabled": true,
       "inputsDB": {
         "pluginSourceId": "Community:Tdarr_Plugin_henk_Keep_Native_Lang_Plus_Eng",
         "priority": "sonarr",
@@ -64,6 +58,12 @@
         "api_key": "{{{args.userVariables.global.api_key_tmdb}}}",
         "sonarr_api_key": "{{{args.userVariables.global.api_key_sonarr}}}",
         "sonarr_url": "{{{args.userVariables.global.url_sonarr}}}"
+      },
+      "fpEnabled": true,
+      "id": "9IqHpqoHI",
+      "position": {
+        "x": 1259.9997228048965,
+        "y": 406.57243743681386
       }
     },
     {
@@ -71,16 +71,16 @@
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
-      "id": "YIikV0LAi",
-      "position": {
-        "x": 1462.4200661934167,
-        "y": 363.9800525426111
-      },
-      "fpEnabled": true,
       "inputsDB": {
         "variable": "{{{args.userVariables.library.is_foreign}}}",
         "value": "true",
         "condition": "=="
+      },
+      "fpEnabled": true,
+      "id": "YIikV0LAi",
+      "position": {
+        "x": 1462.4200661934167,
+        "y": 363.9800525426111
       }
     },
     {
@@ -88,27 +88,11 @@
       "sourceRepo": "Community",
       "pluginName": "failFlow",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "EuecZCFiv",
       "position": {
         "x": 1640.6487413024333,
         "y": 1117.3365824890539
-      },
-      "fpEnabled": true
-    },
-    {
-      "name": "set audio_has_been_cleaned = true",
-      "sourceRepo": "Community",
-      "pluginName": "setFlowVariable",
-      "version": "1.0.0",
-      "id": "FFll-kYBC",
-      "position": {
-        "x": 1234.3803039553457,
-        "y": 1162.8211742957135
-      },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "audio_has_been_cleaned",
-        "value": "true"
       }
     },
     {
@@ -116,15 +100,31 @@
       "sourceRepo": "Community",
       "pluginName": "setFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "audio_has_been_cleaned",
+        "value": "true"
+      },
+      "fpEnabled": true,
+      "id": "FFll-kYBC",
+      "position": {
+        "x": 1234.3803039553457,
+        "y": 1162.8211742957135
+      }
+    },
+    {
+      "name": "set audio_has_been_cleaned = true",
+      "sourceRepo": "Community",
+      "pluginName": "setFlowVariable",
+      "version": "1.0.0",
+      "inputsDB": {
+        "variable": "audio_has_been_cleaned",
+        "value": "true"
+      },
+      "fpEnabled": true,
       "id": "toqWXjkJT",
       "position": {
         "x": 1023.8134759612551,
         "y": 1144.747947347562
-      },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "audio_has_been_cleaned",
-        "value": "true"
       }
     },
     {
@@ -132,39 +132,39 @@
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "ocVciVFsa",
       "position": {
         "x": 1441.779279856946,
         "y": 1020.2859895407569
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "✅✅✅ AUDIO CLEANING COMPLETE ✅✅✅",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "PwEhibX1Z",
       "position": {
         "x": 1234.8706655778967,
         "y": 1248.3518882631224
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "⏎ Returning back to the controller flow",
       "sourceRepo": "Community",
       "pluginName": "goToFlow",
       "version": "2.0.0",
+      "inputsDB": {
+        "flowId": "F4KO4luxb",
+        "pluginId": "pqhKCm7pB"
+      },
+      "fpEnabled": true,
       "id": "0c62eVDls",
       "position": {
         "x": 1024.5747824809785,
         "y": 1233.539086042052
-      },
-      "fpEnabled": true,
-      "inputsDB": {
-        "flowId": "F4KO4luxb",
-        "pluginId": "pqhKCm7pB"
       }
     },
     {
@@ -172,15 +172,15 @@
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "{{{args.userVariables.library.enable_control_flow}}}",
+        "value": "true"
+      },
+      "fpEnabled": true,
       "id": "-G67OyKM7",
       "position": {
         "x": 1099.7210910228207,
         "y": 917.4405347571483
-      },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "{{{args.userVariables.library.enable_control_flow}}}",
-        "value": "true"
       }
     },
     {
@@ -188,28 +188,28 @@
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "Tv4RkmGJt",
       "position": {
         "x": 1315.2143781688808,
         "y": 844.8565850673915
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "🏁 AUDIO STREAM CLEANING CHECKPOINT: File Size Check",
       "sourceRepo": "Community",
       "pluginName": "runClassicTranscodePlugin",
       "version": "2.0.0",
-      "id": "kwVAOnYRB",
-      "position": {
-        "x": 1100.6706522093184,
-        "y": 794.4657309488307
-      },
-      "fpEnabled": true,
       "inputsDB": {
         "pluginSourceId": "Community:Tdarr_Plugin_a9he_New_file_size_check",
         "upperBound": "125",
         "lowerBound": "75"
+      },
+      "fpEnabled": true,
+      "id": "kwVAOnYRB",
+      "position": {
+        "x": 1100.6706522093184,
+        "y": 794.4657309488307
       }
     },
     {
@@ -217,15 +217,15 @@
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "{{{args.userVariables.library.enable_control_flow}}}",
+        "value": "true"
+      },
+      "fpEnabled": true,
       "id": "5h3aU2wWR",
       "position": {
         "x": 1616.7532577828529,
         "y": 318.39752793773965
-      },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "{{{args.userVariables.library.enable_control_flow}}}",
-        "value": "true"
       }
     },
     {
@@ -233,50 +233,50 @@
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "yx0wwA1rj",
       "position": {
         "x": 1352.5054255122639,
         "y": 120.66453358222552
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "Fail Flow",
       "sourceRepo": "Community",
       "pluginName": "failFlow",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "gUXAUSLbT",
       "position": {
         "x": 1515.3012459398212,
         "y": 854.9333648679157
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "‼️‼️ AUDIO STREAM CLEANING DURATION CHECK FAILED. OOPSIES ‼️‼️",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "5ynOIH5pQ",
       "position": {
         "x": 1336.9532841573534,
         "y": 741.2295903137925
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "🏁 AUDIO STREAM CLEANING CHECKPOINT: Duration Check",
       "sourceRepo": "Community",
       "pluginName": "runClassicTranscodePlugin",
       "version": "2.0.0",
+      "inputsDB": {
+        "pluginSourceId": "Community:Tdarr_Plugin_a9hf_New_file_duration_check"
+      },
+      "fpEnabled": true,
       "id": "bDvGHgzR2",
       "position": {
         "x": 1104.2976469629173,
         "y": 692.8249211861056
-      },
-      "fpEnabled": true,
-      "inputsDB": {
-        "pluginSourceId": "Community:Tdarr_Plugin_a9hf_New_file_duration_check"
       }
     },
     {
@@ -284,15 +284,15 @@
       "sourceRepo": "Community",
       "pluginName": "setFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "audio_has_been_cleaned",
+        "value": "false"
+      },
+      "fpEnabled": true,
       "id": "rmmzJ9UVr",
       "position": {
         "x": 1841.9131366601741,
         "y": 148.74904187314735
-      },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "audio_has_been_cleaned",
-        "value": "false"
       }
     },
     {
@@ -300,15 +300,15 @@
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "{{{args.userVariables.library.enable_control_flow}}}",
+        "value": "true"
+      },
+      "fpEnabled": true,
       "id": "LDfgoIQyV",
       "position": {
         "x": 1844.2772346304937,
         "y": 242.66975336349543
-      },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "{{{args.userVariables.library.enable_control_flow}}}",
-        "value": "true"
       }
     },
     {
@@ -316,15 +316,15 @@
       "sourceRepo": "Community",
       "pluginName": "goToFlow",
       "version": "2.0.0",
+      "inputsDB": {
+        "flowId": "F4KO4luxb",
+        "pluginId": "pqhKCm7pB"
+      },
+      "fpEnabled": true,
       "id": "a1Bb1G9pN",
       "position": {
         "x": 1820.8665582669175,
         "y": 414.985157051362
-      },
-      "fpEnabled": true,
-      "inputsDB": {
-        "flowId": "F4KO4luxb",
-        "pluginId": "pqhKCm7pB"
       }
     },
     {
@@ -332,16 +332,16 @@
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
-      "id": "GudmPNgxO",
-      "position": {
-        "x": 1159.6926623694735,
-        "y": 34.24585346878086
-      },
-      "fpEnabled": true,
       "inputsDB": {
         "variable": "audio_has_been_cleaned",
         "value": "false",
         "condition": "!="
+      },
+      "fpEnabled": true,
+      "id": "GudmPNgxO",
+      "position": {
+        "x": 1159.6926623694735,
+        "y": 34.24585346878086
       }
     },
     {
@@ -349,16 +349,16 @@
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
-      "id": "x_65k3lxU",
-      "position": {
-        "x": 1184.135774026661,
-        "y": -90.5643687843782
-      },
-      "fpEnabled": true,
       "inputsDB": {
         "variable": "{{{args.userVariables.library.enable_audio_cleaning}}}",
         "value": "true",
         "condition": "=="
+      },
+      "fpEnabled": true,
+      "id": "x_65k3lxU",
+      "position": {
+        "x": 1184.135774026661,
+        "y": -90.5643687843782
       }
     },
     {
@@ -366,12 +366,6 @@
       "sourceRepo": "Community",
       "pluginName": "runClassicTranscodePlugin",
       "version": "2.0.0",
-      "id": "2Qv7h0eMc",
-      "position": {
-        "x": 947.7381924815659,
-        "y": 329.26950754658185
-      },
-      "fpEnabled": true,
       "inputsDB": {
         "pluginSourceId": "Community:Tdarr_Plugin_henk_Keep_Native_Lang_Plus_Eng",
         "priority": "sonarr",
@@ -381,6 +375,12 @@
         "api_key": "{{{args.userVariables.global.api_key_tmdb}}}",
         "sonarr_api_key": "{{{args.userVariables.global.api_key_sonarrAnime}}}",
         "sonarr_url": "{{{args.userVariables.global.url_sonarrAnime}}}"
+      },
+      "fpEnabled": true,
+      "id": "2Qv7h0eMc",
+      "position": {
+        "x": 947.7381924815659,
+        "y": 329.26950754658185
       }
     },
     {
@@ -388,16 +388,16 @@
       "sourceRepo": "Community",
       "pluginName": "runClassicTranscodePlugin",
       "version": "2.0.0",
-      "id": "oumlf8YGO",
-      "position": {
-        "x": 1432.7451583798654,
-        "y": 535.595638815445
-      },
-      "fpEnabled": true,
       "inputsDB": {
         "pluginSourceId": "Community:Tdarr_Plugin_MC93_Migz3CleanAudio",
         "language": "eng,und",
         "tag_language": "eng"
+      },
+      "fpEnabled": true,
+      "id": "oumlf8YGO",
+      "position": {
+        "x": 1432.7451583798654,
+        "y": 535.595638815445
       }
     },
     {
@@ -405,15 +405,15 @@
       "sourceRepo": "Community",
       "pluginName": "runClassicTranscodePlugin",
       "version": "2.0.0",
+      "inputsDB": {
+        "pluginSourceId": "Community:Tdarr_Plugin_076a_re_order_audio_streams",
+        "preferred_language": "eng"
+      },
+      "fpEnabled": true,
       "id": "k9KMZlMP9",
       "position": {
         "x": 1431.2676479138347,
         "y": 607.8206286229479
-      },
-      "fpEnabled": true,
-      "inputsDB": {
-        "pluginSourceId": "Community:Tdarr_Plugin_076a_re_order_audio_streams",
-        "preferred_language": "eng"
       }
     },
     {
@@ -421,14 +421,14 @@
       "sourceRepo": "Community",
       "pluginName": "inputFile",
       "version": "1.0.0",
+      "inputsDB": {
+        "fileAccessChecks": "true"
+      },
+      "fpEnabled": true,
       "id": "xR8gCEb7_",
       "position": {
         "x": 971.6426966454992,
         "y": -347.7379233473291
-      },
-      "fpEnabled": true,
-      "inputsDB": {
-        "fileAccessChecks": "true"
       }
     },
     {
@@ -436,15 +436,15 @@
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "{{{args.userVariables.library.name}}}",
+        "value": "ANIME"
+      },
+      "fpEnabled": true,
       "id": "lzluIcJwO",
       "position": {
         "x": 1136.4674582334708,
         "y": 255.94254760382847
-      },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "{{{args.userVariables.library.name}}}",
-        "value": "ANIME"
       }
     },
     {
@@ -452,15 +452,15 @@
       "sourceRepo": "Community",
       "pluginName": "runClassicTranscodePlugin",
       "version": "2.0.0",
+      "inputsDB": {
+        "pluginSourceId": "Community:Tdarr_Plugin_076a_re_order_audio_streams",
+        "preferred_language": "jpn"
+      },
+      "fpEnabled": true,
       "id": "kQz8D5pTi",
       "position": {
         "x": 924.685681400457,
         "y": 493.7614454103848
-      },
-      "fpEnabled": true,
-      "inputsDB": {
-        "pluginSourceId": "Community:Tdarr_Plugin_076a_re_order_audio_streams",
-        "preferred_language": "jpn"
       }
     },
     {
@@ -468,16 +468,16 @@
       "sourceRepo": "Community",
       "pluginName": "runClassicTranscodePlugin",
       "version": "2.0.0",
-      "id": "BeJHmegDs",
-      "position": {
-        "x": 1049.792805514699,
-        "y": 421.33751399843123
-      },
-      "fpEnabled": true,
       "inputsDB": {
         "pluginSourceId": "Community:Tdarr_Plugin_MC93_Migz3CleanAudio",
         "language": "jpn,eng,und",
         "tag_language": "eng"
+      },
+      "fpEnabled": true,
+      "id": "BeJHmegDs",
+      "position": {
+        "x": 1049.792805514699,
+        "y": 421.33751399843123
       }
     },
     {
@@ -485,98 +485,98 @@
       "sourceRepo": "Community",
       "pluginName": "replaceOriginalFile",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "3ljdCJLGm",
       "position": {
         "x": 1233.383116383866,
         "y": 1018.445103146916
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "‼️‼️‼️ AUDIO CLEANING DISABLED  ‼️‼️‼️",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "Oi_aXaz7O",
       "position": {
         "x": 1446.759131609964,
         "y": -6.170865889327159
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "✅✅✅ AUDIO CLEANING COMPLETE ✅✅✅",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "xWdoGKRHw",
       "position": {
         "x": 1024.3038375838062,
         "y": 1047.4854545058822
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "Entry point from another flow",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "-O_1ZjPQ3",
       "position": {
         "x": 1216.9752194005741,
         "y": -283.0630621129967
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "On Flow Error",
       "sourceRepo": "Community",
       "pluginName": "onFlowError",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "XnTBk97W9",
       "position": {
         "x": 1841.498789090928,
         "y": 80.44581725891616
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "Copy to Working Directory",
       "sourceRepo": "Community",
       "pluginName": "copyToWorkDirectory",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "XSNXsXj2m",
       "position": {
         "x": 971.2236626289114,
         "y": -269.1207602435841
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "Move To Original Directory",
       "sourceRepo": "Community",
       "pluginName": "moveToOriginalDirectory",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "vr5aLl2cF",
       "position": {
         "x": 1443.4849429124358,
         "y": 1108.3315157752738
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "Delete Original File",
       "sourceRepo": "Community",
       "pluginName": "deleteFile",
       "version": "1.0.0",
+      "inputsDB": {
+        "fileToDelete": "originalFile"
+      },
+      "fpEnabled": true,
       "id": "JUgXchjWT",
       "position": {
         "x": 1443.11566772866,
         "y": 1186.6007707112637
-      },
-      "fpEnabled": true,
-      "inputsDB": {
-        "fileToDelete": "originalFile"
       }
     },
     {
@@ -584,48 +584,48 @@
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "4kzrWuLOk",
       "position": {
         "x": 1259.9818983757716,
         "y": 522.1825906215461
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "We sure did.",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "UcEeH0Wum",
       "position": {
         "x": 1023.9132657753453,
         "y": 1001.1387770019875
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "🚀 It's not anime, a movie, or marked as foreign. We're safe to remove any audio stream that isn't English or Undetermined",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "xMJkA85Y-",
       "position": {
         "x": 1616.572751276098,
         "y": 426.21704654458546
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "🇯🇵 Yup, it's anime.",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "PrwHGXanC",
       "position": {
         "x": 947.4982397189672,
         "y": 268.8134978484813
-      },
-      "fpEnabled": true
+      }
     }
   ],
   "flowEdges": [
