@@ -9,15 +9,15 @@
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "{{{args.userVariables.library.is_remux}}}",
+        "value": "true"
+      },
+      "fpEnabled": true,
       "id": "QYllWNCXv",
       "position": {
         "x": 896.2572445878899,
         "y": 770.5354490683002
-      },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "{{{args.userVariables.library.is_remux}}}",
-        "value": "true"
       }
     },
     {
@@ -25,26 +25,26 @@
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "FpvsFPLjd",
       "position": {
         "x": 905.5546934696704,
         "y": 1270.6204317749975
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "🧼 | 🗑️ Delete Original File",
       "sourceRepo": "Community",
       "pluginName": "deleteFile",
       "version": "1.0.0",
+      "inputsDB": {
+        "fileToDelete": "originalFile"
+      },
+      "fpEnabled": true,
       "id": "pt8ZIEsST",
       "position": {
         "x": 2111.408463124051,
         "y": 937.4595384707142
-      },
-      "fpEnabled": true,
-      "inputsDB": {
-        "fileToDelete": "originalFile"
       }
     },
     {
@@ -52,99 +52,99 @@
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "WCqMWtIOa",
       "position": {
         "x": 1672.9918771371313,
         "y": 923.8524081886383
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "🧼 | ‼️Something went wrong replacing the original file, attempting to move/delete instead.",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "hoZu1mKCw",
       "position": {
         "x": 1230.502054996176,
         "y": 922.8780423694071
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "🧼 | 👍 It is not a personal release. Replace Original File",
       "sourceRepo": "Community",
       "pluginName": "replaceOriginalFile",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "Q7BWUuKSW",
       "position": {
         "x": 1019.3287151544989,
         "y": 909.6769889393075
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "🧼 | 🚚 Move To Original Directory",
       "sourceRepo": "Community",
       "pluginName": "moveToOriginalDirectory",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "LzEDjfk7G",
       "position": {
         "x": 1462.1140405147053,
         "y": 925.413435501236
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "🧼 | 💾 Copy to Working Directory",
       "sourceRepo": "Community",
       "pluginName": "copyToWorkDirectory",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "wFtg6QqUt",
       "position": {
         "x": 1896.431269776127,
         "y": 923.8307921157233
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "🧼 | ‼️‼️‼️ CLEANUP HAS FAILED ‼️‼️‼️",
       "sourceRepo": "Community",
       "pluginName": "failFlow",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "1bHT-hXJS",
       "position": {
         "x": 2272.0000358745574,
         "y": 1009.2018868945227
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "🧼 | 🤖 Tags: Worker Type (ANY)",
       "sourceRepo": "Community",
       "pluginName": "tagsWorkerType",
       "version": "1.0.0",
+      "fpEnabled": false,
       "id": "MoyDWZW8i",
       "position": {
         "x": 905.559013574989,
         "y": 1360.290980343432
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "🧼 | 🚚 Move to remuxing output directory",
       "sourceRepo": "Community",
       "pluginName": "moveToDirectory",
       "version": "2.0.0",
+      "inputsDB": {
+        "outputDirectory": "/mnt/syno_a/media/remuxing/output",
+        "keepRelativePath": "true"
+      },
+      "fpEnabled": true,
       "id": "XEt7oC1e6",
       "position": {
         "x": 797.208119978272,
         "y": 923.1721812004338
-      },
-      "fpEnabled": true,
-      "inputsDB": {
-        "outputDirectory": "/mnt/syno_a/media/remuxing/output",
-        "keepRelativePath": "true"
       }
     },
     {
@@ -152,27 +152,27 @@
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "wnjcuNsKU",
       "position": {
         "x": 896.2677303794019,
         "y": 679.2975198702727
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "🧼 | 🛫 Depart to Controller Flow",
       "sourceRepo": "Community",
       "pluginName": "goToFlow",
       "version": "2.0.0",
+      "inputsDB": {
+        "pluginId": "SWsE5bHd5",
+        "flowId": "F4KO4luxb"
+      },
+      "fpEnabled": true,
       "id": "LWRm3X4a1",
       "position": {
         "x": 905.1913295669704,
         "y": 1447.3929039665097
-      },
-      "fpEnabled": true,
-      "inputsDB": {
-        "pluginId": "SWsE5bHd5",
-        "flowId": "F4KO4luxb"
       }
     },
     {
@@ -180,36 +180,36 @@
       "sourceRepo": "Community",
       "pluginName": "clearCache",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "M4pk158Vd",
       "position": {
         "x": 905.584830743459,
         "y": 1124.2210285545582
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "🧼 | ‼️ Couldn't clean the job cache. Moving on anyways.",
       "sourceRepo": "Community",
       "pluginName": "resetFlowError",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "Rborxe5tX",
       "position": {
         "x": 1128.4209968118917,
         "y": 1169.5186594535858
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "Bypass for Single-Node setups --->>",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "nQPuDEwvv",
       "position": {
         "x": 731.5366295013413,
         "y": 1359.4536717118756
-      },
-      "fpEnabled": true
+      }
     }
   ],
   "flowEdges": [
