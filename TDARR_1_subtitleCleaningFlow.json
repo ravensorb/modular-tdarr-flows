@@ -9,27 +9,27 @@
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "w8TOnN66l",
       "position": {
         "x": 191.82870704626293,
         "y": -1552.2440749115676
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "💬 | 🤖 Tags: Worker Type - Media Server Only",
       "sourceRepo": "Community",
       "pluginName": "tagsWorkerType",
       "version": "1.0.0",
+      "inputsDB": {
+        "requiredWorkerType": "CPU",
+        "requiredNodeTags": "media-server-only"
+      },
+      "fpEnabled": false,
       "id": "XzWolgr-5",
       "position": {
         "x": 446.9666705171544,
         "y": 1123.9634422743923
-      },
-      "fpEnabled": true,
-      "inputsDB": {
-        "requiredWorkerType": "CPU",
-        "requiredNodeTags": "media-server-only"
       }
     },
     {
@@ -37,74 +37,74 @@
       "sourceRepo": "Community",
       "pluginName": "resetFlowError",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "HXCmY7ABl",
       "position": {
         "x": 627.5058524065524,
         "y": 1262.6985976094213
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "💬 | 😳 Wow good thing we checked",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "elH-s2ZwN",
       "position": {
         "x": 426.035516140088,
         "y": -101.26593343626581
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "💬 | 👍 No unwanted subtitle formats founded. Continuing on.",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "pe651FWgW",
       "position": {
         "x": 762.7995745199662,
         "y": -302.7048945419755
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "💬 | 🚀 Beginning Unwanted Format Logic",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "LT-mdO6MW",
       "position": {
         "x": 362.59387156454665,
         "y": -1171.704806498556
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "💬 | 🫥 Welp, that didn't work. Reseting Any Flow Errors",
       "sourceRepo": "Community",
       "pluginName": "resetFlowError",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "ujCa-tvrs",
       "position": {
         "x": 708.7790066692584,
         "y": 840.7603823951292
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "💬 | 🧼 Using x7ac's Remove Closed Captions plugin to be thorough",
       "sourceRepo": "Community",
       "pluginName": "runClassicTranscodePlugin",
       "version": "2.0.0",
+      "inputsDB": {
+        "pluginSourceId": "Community:Tdarr_Plugin_x7ac_Remove_Closed_Captions"
+      },
+      "fpEnabled": true,
       "id": "fQ3nmtQ4S",
       "position": {
         "x": 472.1696975361002,
         "y": 791.4486952140052
-      },
-      "fpEnabled": true,
-      "inputsDB": {
-        "pluginSourceId": "Community:Tdarr_Plugin_x7ac_Remove_Closed_Captions"
       }
     },
     {
@@ -112,40 +112,40 @@
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "YRfIuhnS4",
       "position": {
         "x": 447.2358515259736,
         "y": 1038.4283571356532
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "💬 | 🚀 Begin CC/Burn-In Removal logic",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "jS3Z4a9ss",
       "position": {
         "x": 521.9791975204208,
         "y": 67.26590111370683
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "💬 | 🧼 Double check one more time for \"mov_text\" stream and removing",
       "sourceRepo": "Community",
       "pluginName": "runClassicTranscodePlugin",
       "version": "2.0.0",
-      "id": "4R6xxWqkV",
-      "position": {
-        "x": 497.6092317941234,
-        "y": -200.23713203536178
-      },
-      "fpEnabled": true,
       "inputsDB": {
         "pluginSourceId": "Community:Tdarr_Plugin_00td_action_remove_stream_by_specified_property",
         "valuesToRemove": "mov_text",
         "propertyToCheck": "subtitle"
+      },
+      "fpEnabled": true,
+      "id": "4R6xxWqkV",
+      "position": {
+        "x": 497.6092317941234,
+        "y": -200.23713203536178
       }
     },
     {
@@ -153,52 +153,52 @@
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "E2PxyR_u0",
       "position": {
         "x": 233.86732145719236,
         "y": -303.1521147037568
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "💬 | 👎 No fonts to get rid of. Moving on",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "mfP1OCcaG",
       "position": {
         "x": 411.5742877472164,
         "y": -287.2248908465448
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "💬 | 🫥 Welp, that didn't work. Reseting Any Flow Errors",
       "sourceRepo": "Community",
       "pluginName": "resetFlowError",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "u0b4C7dHk",
       "position": {
         "x": 821.6379064527274,
         "y": 266.9760148491145
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "💬 | 🧼 Trying to remove any \"SDH\" and \"CC\" streams using 'title' property instead",
       "sourceRepo": "Community",
       "pluginName": "runClassicTranscodePlugin",
       "version": "2.0.0",
-      "id": "C6Cc1gG4k",
-      "position": {
-        "x": 624.8512848566323,
-        "y": 252.63548631506006
-      },
-      "fpEnabled": true,
       "inputsDB": {
         "pluginSourceId": "Community:Tdarr_Plugin_00td_action_remove_stream_by_specified_property",
         "valuesToRemove": "SDH,CC,English (SDH),English CC",
         "propertyToCheck": "title"
+      },
+      "fpEnabled": true,
+      "id": "C6Cc1gG4k",
+      "position": {
+        "x": 624.8512848566323,
+        "y": 252.63548631506006
       }
     },
     {
@@ -206,27 +206,27 @@
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "G1GX-ld4b",
       "position": {
         "x": 590.5896250709417,
         "y": -287.85398666358674
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "💬 | 🧼 Remove Bad Sub Formats",
       "sourceRepo": "Community",
       "pluginName": "runClassicTranscodePlugin",
       "version": "2.0.0",
+      "inputsDB": {
+        "pluginSourceId": "Community:Tdarr_Plugin_MP01_MichPasCleanSubsAndAudioCodecs",
+        "tag_subtitle_codecs": "mov_text,MOV_TEXT,mov_txt,hdmv_pgs_subtitle,dvd_subtitle,eia_608,subtitle eia_608"
+      },
+      "fpEnabled": true,
       "id": "2Wt13Uy8s",
       "position": {
         "x": 566.0886778144074,
         "y": -474.51132712738973
-      },
-      "fpEnabled": true,
-      "inputsDB": {
-        "pluginSourceId": "Community:Tdarr_Plugin_MP01_MichPasCleanSubsAndAudioCodecs",
-        "tag_subtitle_codecs": "mov_text,MOV_TEXT,mov_txt,hdmv_pgs_subtitle,dvd_subtitle,eia_608,subtitle eia_608"
       }
     },
     {
@@ -234,16 +234,16 @@
       "sourceRepo": "Community",
       "pluginName": "runClassicTranscodePlugin",
       "version": "2.0.0",
-      "id": "8XNARPoPb",
-      "position": {
-        "x": 312.54447567239214,
-        "y": -387.86307437976944
-      },
-      "fpEnabled": true,
       "inputsDB": {
         "pluginSourceId": "Community:Tdarr_Plugin_00td_action_remove_stream_by_specified_property",
         "valuesToRemove": "font/ttf,font/otf,font/woff,font/woff2,font/eot",
         "propertyToCheck": "tags.mimetype"
+      },
+      "fpEnabled": true,
+      "id": "8XNARPoPb",
+      "position": {
+        "x": 312.54447567239214,
+        "y": -387.86307437976944
       }
     },
     {
@@ -251,40 +251,40 @@
       "sourceRepo": "Community",
       "pluginName": "resetFlowError",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "NVLgzb0Ue",
       "position": {
         "x": 514.5797870824473,
         "y": -1270.154697045
-      },
-      "fpEnabled": true
+      }
     },
     {
-      "name": "💬 | 🧼 Let's get rid of any subtitles that aren't English or Undetermined. We'll also keep Japanese because Kevin is learning Japanese.",
+      "name": "💬 | 🧼 Let's get rid of any subtitles that aren't English or Undetermined. We'll also keep Spanish and German because we are interested in learning these languages.",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "PFYswqqks",
       "position": {
         "x": 364.42959090159394,
         "y": -1448.7968930565355
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "💬 | 🧼 Run Migz Clean Subtitles",
       "sourceRepo": "Community",
       "pluginName": "runClassicTranscodePlugin",
       "version": "2.0.0",
+      "inputsDB": {
+        "pluginSourceId": "Community:Tdarr_Plugin_MC93_Migz4CleanSubs",
+        "tag_language": "eng",
+        "language": "eng,es,und,en,de,spa,deu,ger"
+      },
+      "fpEnabled": true,
       "id": "Bp_OfjDdd",
       "position": {
         "x": 364.0451575273209,
         "y": -1318.840377591132
-      },
-      "fpEnabled": true,
-      "inputsDB": {
-        "pluginSourceId": "Community:Tdarr_Plugin_MC93_Migz4CleanSubs",
-        "tag_language": "eng",
-        "language": "eng,jpn,und,en,jp"
       }
     },
     {
@@ -292,14 +292,14 @@
       "sourceRepo": "Community",
       "pluginName": "tagsWorkerType",
       "version": "1.0.0",
+      "inputsDB": {
+        "requiredNodeTags": "all-remote-nodes"
+      },
+      "fpEnabled": false,
       "id": "hPg0Yc7qV",
       "position": {
         "x": 364.84303892770697,
         "y": -1550.2859676683433
-      },
-      "fpEnabled": true,
-      "inputsDB": {
-        "requiredNodeTags": "all-remote-nodes"
       }
     },
     {
@@ -307,16 +307,16 @@
       "sourceRepo": "Community",
       "pluginName": "runClassicTranscodePlugin",
       "version": "2.0.0",
-      "id": "OJkRDAb3P",
-      "position": {
-        "x": 604.1304136321764,
-        "y": 574.9728382932054
-      },
-      "fpEnabled": true,
       "inputsDB": {
         "pluginSourceId": "Community:Tdarr_Plugin_00td_action_remove_stream_by_specified_property",
         "valuesToRemove": "1",
         "propertyToCheck": "hearing_impaired"
+      },
+      "fpEnabled": true,
+      "id": "OJkRDAb3P",
+      "position": {
+        "x": 604.1304136321764,
+        "y": 574.9728382932054
       }
     },
     {
@@ -324,16 +324,16 @@
       "sourceRepo": "Community",
       "pluginName": "runClassicTranscodePlugin",
       "version": "2.0.0",
-      "id": "sU_A71hQU",
-      "position": {
-        "x": 497.0417368265779,
-        "y": 475.2043172699643
-      },
-      "fpEnabled": true,
       "inputsDB": {
         "pluginSourceId": "Community:Tdarr_Plugin_00td_action_remove_stream_by_specified_property",
         "valuesToRemove": "1",
         "propertyToCheck": "disposition.hearing_impaired"
+      },
+      "fpEnabled": true,
+      "id": "sU_A71hQU",
+      "position": {
+        "x": 497.0417368265779,
+        "y": 475.2043172699643
       }
     },
     {
@@ -341,15 +341,15 @@
       "sourceRepo": "Community",
       "pluginName": "runClassicTranscodePlugin",
       "version": "2.0.0",
+      "inputsDB": {
+        "pluginSourceId": "Community:Tdarr_Plugin_rr01_drpeppershaker_extract_subs_to_SRT",
+        "remove_subs": "yes"
+      },
+      "fpEnabled": true,
       "id": "UoPfcsAg7",
       "position": {
         "x": 337.47987400457697,
         "y": -787.7423255326877
-      },
-      "fpEnabled": true,
-      "inputsDB": {
-        "pluginSourceId": "Community:Tdarr_Plugin_rr01_drpeppershaker_extract_subs_to_SRT",
-        "remove_subs": "yes"
       }
     },
     {
@@ -357,17 +357,17 @@
       "sourceRepo": "Community",
       "pluginName": "runClassicFilterPlugin",
       "version": "1.0.0",
-      "id": "8SXqW9sLU",
-      "position": {
-        "x": 533.6829645608667,
-        "y": -985.4718792141937
-      },
-      "fpEnabled": true,
       "inputsDB": {
         "pluginSourceId": "Community:Tdarr_Plugin_00td_filter_by_stream_tag",
         "tagName": "CodecID",
         "tagValues": "tx3g",
         "continueIfTagFound": "true"
+      },
+      "fpEnabled": true,
+      "id": "8SXqW9sLU",
+      "position": {
+        "x": 533.6829645608667,
+        "y": -985.4718792141937
       }
     },
     {
@@ -375,40 +375,40 @@
       "sourceRepo": "Community",
       "pluginName": "resetFlowError",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "KxopXNEqB",
       "position": {
         "x": 627.1537221567766,
         "y": 1420.8154309022175
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "💬 | 🫥 Welp, that didn't work. Reseting Any Flow Errors",
       "sourceRepo": "Community",
       "pluginName": "resetFlowError",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "NAhkS_X9d",
       "position": {
         "x": 712.918111893596,
         "y": 691.786389799675
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "💬 | 🧼 Remove \"SDH\" and \"CC\" streams using tags.title property",
       "sourceRepo": "Community",
       "pluginName": "runClassicTranscodePlugin",
       "version": "2.0.0",
-      "id": "PETDUVFDe",
-      "position": {
-        "x": 521.9192312344993,
-        "y": 150.5861473801774
-      },
-      "fpEnabled": true,
       "inputsDB": {
         "pluginSourceId": "Community:Tdarr_Plugin_00td_action_remove_stream_by_specified_property",
         "valuesToRemove": "SDH,CC,English (SDH),English CC,subtitle eia_608",
         "propertyToCheck": "tags.title"
+      },
+      "fpEnabled": true,
+      "id": "PETDUVFDe",
+      "position": {
+        "x": 521.9192312344993,
+        "y": 150.5861473801774
       }
     },
     {
@@ -416,75 +416,75 @@
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "3bczEwhkY",
       "position": {
         "x": 694.7843426320526,
         "y": -1366.0563188919293
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "💬 | 🇺🇸 English subtitles should always come first.",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "krw2Ezrcf",
       "position": {
         "x": 445.7659127101416,
         "y": 1521.4027799400415
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "💬 | 👍 We sure did.",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "-G6abB52E",
       "position": {
         "x": 373.6789994540068,
         "y": 2113.543407312996
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "💬 | 👍 All systems are go. Tower has cleared us for subtitle takeoff",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "30Ws_s_77",
       "position": {
         "x": 365.0333345590942,
         "y": -1655.4449493741752
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "💬 | 🚀🚀🚀 Beginning work on subtitles 🚀🚀🚀",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "8RGQofisa",
       "position": {
         "x": 586.4982314884702,
         "y": -1926.2158897736542
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "💬 | 🪪 Set subs_have_been_cleaned = true",
       "sourceRepo": "Community",
       "pluginName": "setFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "subs_have_been_cleaned",
+        "value": "true"
+      },
+      "fpEnabled": true,
       "id": "OT6kJBOX0",
       "position": {
         "x": 374.2976440951121,
         "y": 2285.6527446030345
-      },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "subs_have_been_cleaned",
-        "value": "true"
       }
     },
     {
@@ -492,15 +492,15 @@
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "{{{args.userVariables.library.enable_control_flow}}}",
+        "value": "true"
+      },
+      "fpEnabled": true,
       "id": "EfBK8ZU7C",
       "position": {
         "x": 719.4303516347596,
         "y": -1535.0023403899395
-      },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "{{{args.userVariables.library.enable_control_flow}}}",
-        "value": "true"
       }
     },
     {
@@ -508,39 +508,39 @@
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "cYFlPlQrZ",
       "position": {
         "x": 374.002606743146,
         "y": 2186.9525295531703
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "💬 | ‼️‼️‼️ SUBTITLE FILE SIZE CHECK FAILED  ‼️‼️‼️",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "8baYQjNQw",
       "position": {
         "x": 669.4138488974145,
         "y": 1845.7645203963498
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "💬 | ❓ Did we come here from the controller flow?",
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "{{{args.userVariables.library.enable_control_flow}}}",
+        "value": "true"
+      },
+      "fpEnabled": true,
       "id": "3xMZOp3fE",
       "position": {
         "x": 471.74129953684456,
         "y": 2029.139664709569
-      },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "{{{args.userVariables.library.enable_control_flow}}}",
-        "value": "true"
       }
     },
     {
@@ -548,16 +548,16 @@
       "sourceRepo": "Community",
       "pluginName": "runClassicTranscodePlugin",
       "version": "2.0.0",
-      "id": "ER4WdJtk7",
-      "position": {
-        "x": 472.46060090334475,
-        "y": 1796.473964971609
-      },
-      "fpEnabled": true,
       "inputsDB": {
         "pluginSourceId": "Community:Tdarr_Plugin_a9he_New_file_size_check",
         "upperBound": "110",
         "lowerBound": "90"
+      },
+      "fpEnabled": true,
+      "id": "ER4WdJtk7",
+      "position": {
+        "x": 472.46060090334475,
+        "y": 1796.473964971609
       }
     },
     {
@@ -565,39 +565,39 @@
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "A3u3d9Gnp",
       "position": {
         "x": 611.7865940939308,
         "y": -1652.4015861683697
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "💬 | ‼️‼️‼️ SUBTITLE CLEANING DISABLED  ‼️‼️‼️",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "VE6vaHlms",
       "position": {
         "x": 845.3371310051665,
         "y": -1650.7101401655511
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "💬 | 🪪 Set subs_have_been_cleaned = false",
       "sourceRepo": "Community",
       "pluginName": "setFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "subs_have_been_cleaned",
+        "value": "false"
+      },
+      "fpEnabled": true,
       "id": "vf1vFX4FS",
       "position": {
         "x": 1028.032272497909,
         "y": -1552.8066791160522
-      },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "subs_have_been_cleaned",
-        "value": "false"
       }
     },
     {
@@ -605,16 +605,16 @@
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
-      "id": "KBs6h6Unj",
-      "position": {
-        "x": 458.03064874701454,
-        "y": -1740.7558233262118
-      },
-      "fpEnabled": true,
       "inputsDB": {
         "variable": "subs_have_been_cleaned",
         "value": "true",
         "condition": "!="
+      },
+      "fpEnabled": true,
+      "id": "KBs6h6Unj",
+      "position": {
+        "x": 458.03064874701454,
+        "y": -1740.7558233262118
       }
     },
     {
@@ -622,38 +622,38 @@
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "efbc31Bfw",
       "position": {
         "x": 572.0226821755118,
         "y": 2377.2767126176227
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "💬 | ‼️‼️‼️ SUBTITLE DURATION CHECK FAILED  ‼️‼️‼️",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "AGLzSPLLB",
       "position": {
         "x": 839.8720749761267,
         "y": 1844.4636366433892
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "💬 | ⬇️ Input File",
       "sourceRepo": "Community",
       "pluginName": "inputFile",
       "version": "1.0.0",
+      "inputsDB": {
+        "fileAccessChecks": "true"
+      },
+      "fpEnabled": true,
       "id": "PH-owVC7K",
       "position": {
         "x": 482.9033158963134,
         "y": -2099.312213170594
-      },
-      "fpEnabled": true,
-      "inputsDB": {
-        "fileAccessChecks": "true"
       }
     },
     {
@@ -661,40 +661,40 @@
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "HV73FJ9OC",
       "position": {
         "x": 728.0265756404663,
         "y": -2025.8113412121772
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "💬 | 💾 Copy to Working Directory",
       "sourceRepo": "Community",
       "pluginName": "copyToWorkDirectory",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "rO68NTLBg",
       "position": {
         "x": 482.98541634234846,
         "y": -2026.397081280795
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "💬 | 🧼 Fallback Attempt to Remove Subs with 'CC/SDH' in their title",
       "sourceRepo": "Community",
       "pluginName": "runClassicTranscodePlugin",
       "version": "2.0.0",
-      "id": "r5l1WgyuP",
-      "position": {
-        "x": 568.0768111905475,
-        "y": 939.6011136443732
-      },
-      "fpEnabled": true,
       "inputsDB": {
         "pluginSourceId": "Community:Tdarr_Plugin_00td_action_remove_stream_by_specified_property",
         "propertyToCheck": "title",
         "valuesToRemove": "English CC,CC,SDH"
+      },
+      "fpEnabled": true,
+      "id": "r5l1WgyuP",
+      "position": {
+        "x": 568.0768111905475,
+        "y": 939.6011136443732
       }
     },
     {
@@ -702,14 +702,14 @@
       "sourceRepo": "Community",
       "pluginName": "runClassicTranscodePlugin",
       "version": "2.0.0",
+      "inputsDB": {
+        "pluginSourceId": "Community:Tdarr_Plugin_076b_re_order_subtitle_streams"
+      },
+      "fpEnabled": true,
       "id": "e95328ErK",
       "position": {
         "x": 445.75505751246544,
         "y": 1609.082910984567
-      },
-      "fpEnabled": true,
-      "inputsDB": {
-        "pluginSourceId": "Community:Tdarr_Plugin_076b_re_order_subtitle_streams"
       }
     },
     {
@@ -717,15 +717,15 @@
       "sourceRepo": "Community",
       "pluginName": "setFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "subs_have_been_cleaned",
+        "value": "true"
+      },
+      "fpEnabled": true,
       "id": "By1xWQv62",
       "position": {
         "x": 571.7977131502082,
         "y": 2270.8319303371654
-      },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "subs_have_been_cleaned",
-        "value": "true"
       }
     },
     {
@@ -733,38 +733,38 @@
       "sourceRepo": "Community",
       "pluginName": "onFlowError",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "solVKi_jv",
       "position": {
         "x": 1027.7779157797129,
         "y": -1631.0819964780324
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "💬 | ☠️ Fail Flow",
       "sourceRepo": "Community",
       "pluginName": "failFlow",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "aEiXGFlxg",
       "position": {
         "x": 849.9902825694928,
         "y": 2044.3644523097284
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "💬 | 🏁 SUBTITLE CLEANING CHECKPOINT: Duration Check",
       "sourceRepo": "Community",
       "pluginName": "runClassicTranscodePlugin",
       "version": "2.0.0",
+      "inputsDB": {
+        "pluginSourceId": "Community:Tdarr_Plugin_a9hf_New_file_duration_check"
+      },
+      "fpEnabled": true,
       "id": "d7VdU6y0e",
       "position": {
         "x": 471.22036566142003,
         "y": 1695.5196891815126
-      },
-      "fpEnabled": true,
-      "inputsDB": {
-        "pluginSourceId": "Community:Tdarr_Plugin_a9hf_New_file_duration_check"
       }
     },
     {
@@ -772,15 +772,15 @@
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "{{{args.userVariables.library.enable_subs_cleaning}}}",
+        "value": "true"
+      },
+      "fpEnabled": true,
       "id": "XwSoQBMTl",
       "position": {
         "x": 586.5483427920223,
         "y": -1838.0558415906876
-      },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "{{{args.userVariables.library.enable_subs_cleaning}}}",
-        "value": "true"
       }
     },
     {
@@ -788,15 +788,15 @@
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "{{{args.userVariables.library.enable_control_flow}}}",
+        "value": "true"
+      },
+      "fpEnabled": true,
       "id": "QXu2TbHcb",
       "position": {
         "x": 1028.1639670200334,
         "y": -1453.604039280921
-      },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "{{{args.userVariables.library.enable_control_flow}}}",
-        "value": "true"
       }
     },
     {
@@ -804,27 +804,27 @@
       "sourceRepo": "Community",
       "pluginName": "deleteFile",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "BrN7zhTEV",
       "position": {
         "x": 1053.191419874258,
         "y": -1364.077132159462
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "💬 | 🛫  Returning to the Controller Flow",
       "sourceRepo": "Community",
       "pluginName": "goToFlow",
       "version": "2.0.0",
+      "inputsDB": {
+        "pluginId": "gCJToxGbl",
+        "flowId": "F4KO4luxb"
+      },
+      "fpEnabled": true,
       "id": "HfwmBha1M",
       "position": {
         "x": 694.4756249835065,
         "y": -1222.5345213632081
-      },
-      "fpEnabled": true,
-      "inputsDB": {
-        "pluginId": "gCJToxGbl",
-        "flowId": "F4KO4luxb"
       }
     },
     {
@@ -832,39 +832,39 @@
       "sourceRepo": "Community",
       "pluginName": "replaceOriginalFile",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "V15od2GxG",
       "position": {
         "x": 571.1550676866702,
         "y": 2114.403138640158
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "💬 | 🗑️ Delete Working File",
       "sourceRepo": "Community",
       "pluginName": "deleteFile",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "zzaqWbGpr",
       "position": {
         "x": 571.4299158661977,
         "y": 2197.1635825126505
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "💬 | 🛫 Returning back to the Controller Flow",
       "sourceRepo": "Community",
       "pluginName": "goToFlow",
       "version": "2.0.0",
+      "inputsDB": {
+        "pluginId": "gCJToxGbl",
+        "flowId": "F4KO4luxb"
+      },
+      "fpEnabled": true,
       "id": "l-yHwpMZE",
       "position": {
         "x": 374.18684682368956,
         "y": 2384.802472419456
-      },
-      "fpEnabled": true,
-      "inputsDB": {
-        "pluginId": "gCJToxGbl",
-        "flowId": "F4KO4luxb"
       }
     },
     {
@@ -872,38 +872,38 @@
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "yBDcscF6k",
       "position": {
         "x": 780.9037507945452,
         "y": 2156.9192611907465
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "💬 | 🚚 Move To Original Directory",
       "sourceRepo": "Community",
       "pluginName": "moveToOriginalDirectory",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "aSznvw0VB",
       "position": {
         "x": 780.903750794545,
         "y": 2256.2218417496842
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "💬 | 🗑️ Delete Original File",
       "sourceRepo": "Community",
       "pluginName": "deleteFile",
       "version": "1.0.0",
+      "inputsDB": {
+        "fileToDelete": "originalFile"
+      },
+      "fpEnabled": true,
       "id": "aTgChc8XH",
       "position": {
         "x": 781.7327354058452,
         "y": 2343.696181832709
-      },
-      "fpEnabled": true,
-      "inputsDB": {
-        "fileToDelete": "originalFile"
       }
     },
     {
@@ -911,15 +911,15 @@
       "sourceRepo": "Community",
       "pluginName": "runClassicTranscodePlugin",
       "version": "2.0.0",
+      "inputsDB": {
+        "pluginSourceId": "Community:Tdarr_Plugin_e5c3_CnT_Add_Subtitles",
+        "install_packages": "yes"
+      },
+      "fpEnabled": true,
       "id": "tSforWSWr",
       "position": {
         "x": 446.20856080804657,
         "y": 1370.394645819377
-      },
-      "fpEnabled": true,
-      "inputsDB": {
-        "pluginSourceId": "Community:Tdarr_Plugin_e5c3_CnT_Add_Subtitles",
-        "install_packages": "yes"
       }
     },
     {
@@ -927,39 +927,39 @@
       "sourceRepo": "Community",
       "pluginName": "requireReview",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "bruIklukX",
       "position": {
         "x": 747.5541979724414,
         "y": 1944.5227499588277
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "💬 | Reset any Flow Errors",
       "sourceRepo": "Community",
       "pluginName": "resetFlowError",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "Ko2ZGeuBj",
       "position": {
         "x": 694.8042391658055,
         "y": -1295.1645547623987
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "💬 | ❓ Are there non-srt/ass, convertable subtitles using codec_name?",
       "sourceRepo": "Community",
       "pluginName": "runClassicFilterPlugin",
       "version": "1.0.0",
+      "inputsDB": {
+        "pluginSourceId": "Community:Tdarr_Plugin_00td_filter_by_codec",
+        "codecsToProcess": "mov_text,eia_608, mov_text, MOV_TEXT, hdmv_pgs_subtitle,dvd_subtitle,eia_608,subtitle eia_608"
+      },
+      "fpEnabled": true,
       "id": "nSGjtN9e7",
       "position": {
         "x": 362.661562783997,
         "y": -1087.5953887788683
-      },
-      "fpEnabled": true,
-      "inputsDB": {
-        "pluginSourceId": "Community:Tdarr_Plugin_00td_filter_by_codec",
-        "codecsToProcess": "mov_text,eia_608, mov_text, MOV_TEXT, hdmv_pgs_subtitle,dvd_subtitle,eia_608,subtitle eia_608"
       }
     },
     {
@@ -967,17 +967,17 @@
       "sourceRepo": "Community",
       "pluginName": "runClassicFilterPlugin",
       "version": "1.0.0",
-      "id": "fDUuHrQPE",
-      "position": {
-        "x": 736.9260165591019,
-        "y": -901.9382921987365
-      },
-      "fpEnabled": true,
       "inputsDB": {
         "pluginSourceId": "Community:Tdarr_Plugin_00td_filter_by_file_property",
         "propertyName": "codec_name",
         "propertyValues": "mov_text,eia_608,mov_text,MOV_TEXT,hdmv_pgs_subtitle,dvd_subtitle,eia_608,subtitle eia_608,",
         "continueIfPropertyFound": "true"
+      },
+      "fpEnabled": true,
+      "id": "fDUuHrQPE",
+      "position": {
+        "x": 736.9260165591019,
+        "y": -901.9382921987365
       }
     },
     {
@@ -985,16 +985,16 @@
       "sourceRepo": "Community",
       "pluginName": "runClassicTranscodePlugin",
       "version": "2.0.0",
-      "id": "d_SuL1jBv",
-      "position": {
-        "x": 497.20484961624516,
-        "y": 385.32004622711014
-      },
-      "fpEnabled": true,
       "inputsDB": {
         "pluginSourceId": "Community:Tdarr_Plugin_00td_action_remove_stream_by_specified_property",
         "propertyToCheck": "codec_name",
         "valuesToRemove": "subtitle eia_608,eia_608"
+      },
+      "fpEnabled": true,
+      "id": "d_SuL1jBv",
+      "position": {
+        "x": 497.20484961624516,
+        "y": 385.32004622711014
       }
     },
     {
@@ -1002,14 +1002,14 @@
       "sourceRepo": "Community",
       "pluginName": "runClassicTranscodePlugin",
       "version": "2.0.0",
+      "inputsDB": {
+        "pluginSourceId": "Community:Tdarr_Plugin_078d_Output_embedded_subs_to_SRT_and_remove"
+      },
+      "fpEnabled": true,
       "id": "Hg7Akf4VJ",
       "position": {
         "x": 442.6473770422592,
         "y": -687.7474089186846
-      },
-      "fpEnabled": true,
-      "inputsDB": {
-        "pluginSourceId": "Community:Tdarr_Plugin_078d_Output_embedded_subs_to_SRT_and_remove"
       }
     },
     {
@@ -1017,63 +1017,63 @@
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "6O0G2SS1e",
       "position": {
         "x": 565.9434841135467,
         "y": -589.067510381554
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "💬 | ✅ Done with unwanted format logic",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "1vYnB5PRA",
       "position": {
         "x": 521.7725115533964,
         "y": -17.304348814790437
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "<-----------------------------------\nMOV_TEXT will break encoding later on so it's important to be sure they don't exist",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "uvX5wJZDr",
       "position": {
         "x": 674.6436375004217,
         "y": -190.38927201138978
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "💬 | 👍✅ Nope. We're all good. Exiting cleanly",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "SAbAeyVbk",
       "position": {
         "x": 805.7304686364439,
         "y": -1451.7346237425375
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "💬 | 💾 Attempt to copy external subs from original directory to working directory",
       "sourceRepo": "Community",
       "pluginName": "copyMoveFolderContent",
       "version": "1.0.0",
+      "inputsDB": {
+        "fileExtensions": "srt,ass",
+        "outputDirectory": "{{{args.workDir}}}"
+      },
+      "fpEnabled": true,
       "id": "DGdizbbma",
       "position": {
         "x": 446.5294720707418,
         "y": 1212.3274999237956
-      },
-      "fpEnabled": true,
-      "inputsDB": {
-        "fileExtensions": "srt,ass",
-        "outputDirectory": "{{{args.workDir}}}"
       }
     },
     {
@@ -1081,24 +1081,24 @@
       "sourceRepo": "Community",
       "pluginName": "clearCache",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "8Bjx4hOet",
       "position": {
         "x": 1053.0164753000054,
         "y": -1291.8217503302267
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "<––––––––––––––––––\nBypass for single-node setups",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "WewS3QqKk",
       "position": {
         "x": 613.3186625491986,
         "y": 1125.3726017658744
-      },
-      "fpEnabled": true
+      }
     }
   ],
   "flowEdges": [
