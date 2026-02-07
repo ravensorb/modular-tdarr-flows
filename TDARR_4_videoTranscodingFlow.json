@@ -288,7 +288,7 @@
       "pluginName": "ffmpegCommandCustomArguments",
       "version": "1.0.0",
       "inputsDB": {
-        "outputArguments": "-rc vbr -rc-lookahead 32 -spatial_aq 1 -aq-strength 8 -cq {{{args.userVariables.library.quality_level}}} -multipass 2pass-fullres"
+        "outputArguments": "-rc vbr -rc-lookahead 32 -spatial_aq 1 -aq-strength 8 -cq {{{args.userVariables.library.quality_level}}} -multipass fullres"
       },
       "fpEnabled": true,
       "id": "ssm3z_AhC",
@@ -320,7 +320,7 @@
       "pluginName": "ffmpegCommandCustomArguments",
       "version": "1.0.0",
       "inputsDB": {
-        "outputArguments": "-rc vbr -tune animation -rc-lookahead 18 -spatial_aq 1 -aq-strength 10 -cq {{{args.userVariables.library.quality_level}}} -multipass 2pass-fullres"
+        "outputArguments": "-rc vbr -tune animation -rc-lookahead 18 -spatial_aq 1 -aq-strength 10 -cq {{{args.userVariables.library.quality_level}}} -multipass fullres"
       },
       "fpEnabled": true,
       "id": "RVX-hRdj2",
@@ -336,8 +336,8 @@
       "version": "2.0.0",
       "inputsDB": {
         "pluginSourceId": "Community:Tdarr_Plugin_a9he_New_file_size_check",
-        "lowerBound": "8",
-        "upperBound": "200"
+        "lowerBound": "{{{args.userVariables.library.file_size_lower_bound}}}",
+        "upperBound": "{{{args.userVariables.library.file_size_upper_bound}}}"
       },
       "fpEnabled": true,
       "id": "__aruWpNb",
@@ -471,7 +471,7 @@
       "version": "1.0.0",
       "inputsDB": {
         "value": "faster",
-        "variable": "{{{{args.userVariables.library.ffmpeg_preset}}}"
+        "variable": "{{{args.userVariables.library.ffmpeg_preset}}}"
       },
       "fpEnabled": true,
       "id": "9JFl9MsWX",
@@ -628,6 +628,22 @@
       }
     },
     {
+      "name": "📼 | ❓ Single Node Mode? (skip GPU tag)",
+      "sourceRepo": "Community",
+      "pluginName": "checkFlowVariable",
+      "version": "1.0.0",
+      "inputsDB": {
+        "variable": "{{{args.userVariables.global.single_node_mode}}}",
+        "value": "true"
+      },
+      "fpEnabled": true,
+      "id": "SNMgpu_ck",
+      "position": {
+        "x": 14,
+        "y": 1210
+      }
+    },
+    {
       "name": "Tags: Worker Type GPU",
       "sourceRepo": "Community",
       "pluginName": "tagsWorkerType",
@@ -636,7 +652,7 @@
         "requiredWorkerType": "GPU:nvenc",
         "requiredNodeTags": "pc-only"
       },
-      "fpEnabled": false,
+      "fpEnabled": true,
       "id": "leytkdC_H",
       "position": {
         "x": 14.21502527193394,
@@ -1151,6 +1167,22 @@
       }
     },
     {
+      "name": "📼 | ❓ Single Node Mode? (skip CPU tag)",
+      "sourceRepo": "Community",
+      "pluginName": "checkFlowVariable",
+      "version": "1.0.0",
+      "inputsDB": {
+        "variable": "{{{args.userVariables.global.single_node_mode}}}",
+        "value": "true"
+      },
+      "fpEnabled": true,
+      "id": "SNMcpu_ck",
+      "position": {
+        "x": 243,
+        "y": 1210
+      }
+    },
+    {
       "name": "Tags: Worker Type CPU",
       "sourceRepo": "Community",
       "pluginName": "tagsWorkerType",
@@ -1159,11 +1191,27 @@
         "requiredWorkerType": "CPU",
         "requiredNodeTags": "pc-only"
       },
-      "fpEnabled": false,
+      "fpEnabled": true,
       "id": "cYIbqVNto",
       "position": {
         "x": 242.82570407649143,
         "y": 1270.7184795368412
+      }
+    },
+    {
+      "name": "📼 | ❓ Single Node Mode? (skip ANY tag)",
+      "sourceRepo": "Community",
+      "pluginName": "checkFlowVariable",
+      "version": "1.0.0",
+      "inputsDB": {
+        "variable": "{{{args.userVariables.global.single_node_mode}}}",
+        "value": "true"
+      },
+      "fpEnabled": true,
+      "id": "SNMany_ck",
+      "position": {
+        "x": 352,
+        "y": 2070
       }
     },
     {
@@ -1174,7 +1222,7 @@
       "inputsDB": {
         "requiredWorkerType": "CPUorGPU"
       },
-      "fpEnabled": false,
+      "fpEnabled": true,
       "id": "4ICjqTwRl",
       "position": {
         "x": 352.09892386100984,
@@ -1949,16 +1997,44 @@
     {
       "source": "yMmOfVyTU",
       "sourceHandle": "1",
-      "target": "leytkdC_H",
+      "target": "SNMgpu_ck",
       "targetHandle": null,
       "id": "x4QAYSNEi"
     },
     {
+      "source": "SNMgpu_ck",
+      "sourceHandle": "2",
+      "target": "leytkdC_H",
+      "targetHandle": null,
+      "id": "SNMgpu_01"
+    },
+    {
+      "source": "SNMgpu_ck",
+      "sourceHandle": "1",
+      "target": "O75tHAMme",
+      "targetHandle": null,
+      "id": "SNMgpu_02"
+    },
+    {
       "source": "yMmOfVyTU",
+      "sourceHandle": "2",
+      "target": "SNMcpu_ck",
+      "targetHandle": null,
+      "id": "WB03F5-yQ"
+    },
+    {
+      "source": "SNMcpu_ck",
       "sourceHandle": "2",
       "target": "cYIbqVNto",
       "targetHandle": null,
-      "id": "WB03F5-yQ"
+      "id": "SNMcpu_01"
+    },
+    {
+      "source": "SNMcpu_ck",
+      "sourceHandle": "1",
+      "target": "S08-ELDeH",
+      "targetHandle": null,
+      "id": "SNMcpu_02"
     },
     {
       "source": "uY7ElPQva",
@@ -2040,9 +2116,23 @@
     {
       "source": "7yFPvyjDw",
       "sourceHandle": "1",
-      "target": "4ICjqTwRl",
+      "target": "SNMany_ck",
       "targetHandle": null,
       "id": "r0lix-6BD"
+    },
+    {
+      "source": "SNMany_ck",
+      "sourceHandle": "2",
+      "target": "4ICjqTwRl",
+      "targetHandle": null,
+      "id": "SNMany_01"
+    },
+    {
+      "source": "SNMany_ck",
+      "sourceHandle": "1",
+      "target": "eib7fKpbW",
+      "targetHandle": null,
+      "id": "SNMany_02"
     },
     {
       "source": "4ICjqTwRl",

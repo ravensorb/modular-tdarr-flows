@@ -120,11 +120,27 @@
       }
     },
     {
+      "name": "🧼 | ❓ Single Node Mode? (skip ANY tag)",
+      "sourceRepo": "Community",
+      "pluginName": "checkFlowVariable",
+      "version": "1.0.0",
+      "inputsDB": {
+        "variable": "{{{args.userVariables.global.single_node_mode}}}",
+        "value": "true"
+      },
+      "fpEnabled": true,
+      "id": "SNMcl_chk",
+      "position": {
+        "x": 906,
+        "y": 1300
+      }
+    },
+    {
       "name": "🧼 | 🤖 Tags: Worker Type (ANY)",
       "sourceRepo": "Community",
       "pluginName": "tagsWorkerType",
       "version": "1.0.0",
-      "fpEnabled": false,
+      "fpEnabled": true,
       "id": "MoyDWZW8i",
       "position": {
         "x": 905.559013574989,
@@ -137,7 +153,7 @@
       "pluginName": "moveToDirectory",
       "version": "2.0.0",
       "inputsDB": {
-        "outputDirectory": "/mnt/syno_a/media/remuxing/output",
+        "outputDirectory": "{{{args.userVariables.global.remux_output_path}}}",
         "keepRelativePath": "true"
       },
       "fpEnabled": true,
@@ -251,9 +267,23 @@
     {
       "source": "FpvsFPLjd",
       "sourceHandle": "1",
-      "target": "MoyDWZW8i",
+      "target": "SNMcl_chk",
       "targetHandle": null,
       "id": "LL3f3fl0x"
+    },
+    {
+      "source": "SNMcl_chk",
+      "sourceHandle": "2",
+      "target": "MoyDWZW8i",
+      "targetHandle": null,
+      "id": "SNMcl_e01"
+    },
+    {
+      "source": "SNMcl_chk",
+      "sourceHandle": "1",
+      "target": "LWRm3X4a1",
+      "targetHandle": null,
+      "id": "SNMcl_e02"
     },
     {
       "source": "QYllWNCXv",

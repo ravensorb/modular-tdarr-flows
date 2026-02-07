@@ -852,6 +852,22 @@
       }
     },
     {
+      "name": "🛎️ | ❓ Are notifications enabled?",
+      "sourceRepo": "Community",
+      "pluginName": "checkFlowVariable",
+      "version": "1.0.0",
+      "inputsDB": {
+        "variable": "{{{args.userVariables.library.enable_notifications}}}",
+        "value": "true"
+      },
+      "fpEnabled": true,
+      "id": "ENnotf_ck",
+      "position": {
+        "x": -90,
+        "y": 1120
+      }
+    },
+    {
       "name": "🛎️ | 🛫 Depart back to Controller Flow",
       "sourceRepo": "Community",
       "pluginName": "goToFlow",
@@ -1156,7 +1172,7 @@
     {
       "source": "pE6rU7gkW",
       "sourceHandle": "1",
-      "target": "5fbBY5_tU",
+      "target": "ENnotf_ck",
       "targetHandle": null,
       "id": "40slx_ibg"
     },
@@ -1331,7 +1347,7 @@
     {
       "source": "8Qq-cLrb1",
       "sourceHandle": "1",
-      "target": "5fbBY5_tU",
+      "target": "ENnotf_ck",
       "targetHandle": null,
       "id": "50k7QV89C"
     },
@@ -1705,6 +1721,20 @@
       "target": "uAdUBeSKZ",
       "targetHandle": null,
       "id": "yuSDmkA0N"
+    },
+    {
+      "source": "ENnotf_ck",
+      "sourceHandle": "1",
+      "target": "5fbBY5_tU",
+      "targetHandle": null,
+      "id": "ENnotf_01"
+    },
+    {
+      "source": "ENnotf_ck",
+      "sourceHandle": "2",
+      "target": "woKzLVsUQ",
+      "targetHandle": null,
+      "id": "ENnotf_02"
     }
   ]
 }

@@ -172,6 +172,22 @@
       }
     },
     {
+      "name": "🧠 | ❓ Single Node Mode? (skip PC tag)",
+      "sourceRepo": "Community",
+      "pluginName": "checkFlowVariable",
+      "version": "1.0.0",
+      "inputsDB": {
+        "variable": "{{{args.userVariables.global.single_node_mode}}}",
+        "value": "true"
+      },
+      "fpEnabled": true,
+      "id": "SNMpc_chk",
+      "position": {
+        "x": 990,
+        "y": 50
+      }
+    },
+    {
       "name": "🧠 | 🤖 Tags: Worker Type (PC)",
       "sourceRepo": "Community",
       "pluginName": "tagsWorkerType",
@@ -179,7 +195,7 @@
       "inputsDB": {
         "requiredNodeTags": "pc-only"
       },
-      "fpEnabled": false,
+      "fpEnabled": true,
       "id": "JqxAaZQvt",
       "position": {
         "x": 990.2120483460512,
@@ -542,6 +558,22 @@
       }
     },
     {
+      "name": "🧠 | ❓ Single Node Mode? (skip Media Server tag)",
+      "sourceRepo": "Community",
+      "pluginName": "checkFlowVariable",
+      "version": "1.0.0",
+      "inputsDB": {
+        "variable": "{{{args.userVariables.global.single_node_mode}}}",
+        "value": "true"
+      },
+      "fpEnabled": true,
+      "id": "SNMms_chk",
+      "position": {
+        "x": 736,
+        "y": -740
+      }
+    },
+    {
       "name": "🧠 | 🤖 Tags: Worker Type (MEDIA SERVER)",
       "sourceRepo": "Community",
       "pluginName": "tagsWorkerType",
@@ -549,7 +581,7 @@
       "inputsDB": {
         "requiredNodeTags": "media-server-only"
       },
-      "fpEnabled": false,
+      "fpEnabled": true,
       "id": "9dk_w0FfB",
       "position": {
         "x": 736.1204846082276,
@@ -700,7 +732,7 @@
       "inputsDB": {
         "condition": "!=",
         "value": "true",
-        "variable": "{{{args.userVariables.library.use_checkpoints}}}"
+        "variable": "{{{args.userVariables.library.useCheckpoints}}}"
       },
       "fpEnabled": true,
       "id": "8Mjm7I-8f",
@@ -949,9 +981,23 @@
     {
       "source": "kgrnNlrq-",
       "sourceHandle": "1",
-      "target": "JqxAaZQvt",
+      "target": "SNMpc_chk",
       "targetHandle": null,
       "id": "vk2NGWWoL"
+    },
+    {
+      "source": "SNMpc_chk",
+      "sourceHandle": "2",
+      "target": "JqxAaZQvt",
+      "targetHandle": null,
+      "id": "SNMpc_e01"
+    },
+    {
+      "source": "SNMpc_chk",
+      "sourceHandle": "1",
+      "target": "r2AHO6udX",
+      "targetHandle": null,
+      "id": "SNMpc_e02"
     },
     {
       "source": "JqxAaZQvt",
@@ -998,9 +1044,23 @@
     {
       "source": "BoW-FQxbG",
       "sourceHandle": "2",
-      "target": "9dk_w0FfB",
+      "target": "SNMms_chk",
       "targetHandle": null,
       "id": "6CDuGXL4n"
+    },
+    {
+      "source": "SNMms_chk",
+      "sourceHandle": "2",
+      "target": "9dk_w0FfB",
+      "targetHandle": null,
+      "id": "SNMms_e01"
+    },
+    {
+      "source": "SNMms_chk",
+      "sourceHandle": "1",
+      "target": "A_I5epkJ_",
+      "targetHandle": null,
+      "id": "SNMms_e02"
     },
     {
       "source": "7IBdVnNvZ",
