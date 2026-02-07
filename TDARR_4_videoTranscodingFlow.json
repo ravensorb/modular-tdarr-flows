@@ -69,8 +69,8 @@
       "fpEnabled": true,
       "id": "jV3nVwvZa",
       "position": {
-        "x": -371.18934004920857,
-        "y": 1741.3075287243755
+        "x": -432,
+        "y": 1896
       }
     },
     {
@@ -84,12 +84,14 @@
         "ffmpegQuality": "{{{args.userVariables.library.quality_level}}}",
         "hardwareEncoding": "true",
         "hardwareType": "nvenc",
-        "hardwareDecoding": "false"
+        "hardwareDecoding": "false",
+        "ffmpegQualityEnabled": "false",
+        "ffmpegPresetEnabled": "false"
       },
       "fpEnabled": true,
       "id": "bfxO9efwr",
       "position": {
-        "x": -156,
+        "x": -120,
         "y": 1644
       }
     },
@@ -104,13 +106,15 @@
         "ffmpegQuality": "{{{args.userVariables.library.quality_level}}}",
         "hardwareEncoding": "true",
         "hardwareType": "nvenc",
-        "hardwareDecoding": "false"
+        "hardwareDecoding": "false",
+        "ffmpegQualityEnabled": "false",
+        "ffmpegPresetEnabled": "false"
       },
       "fpEnabled": true,
       "id": "RSBUeAycC",
       "position": {
-        "x": -278.1498495197487,
-        "y": 1559.725209992371
+        "x": -240,
+        "y": 1560
       }
     },
     {
@@ -124,13 +128,15 @@
         "ffmpegQuality": "{{{args.userVariables.library.quality_level}}}",
         "hardwareEncoding": "true",
         "hardwareType": "nvenc",
-        "hardwareDecoding": "false"
+        "hardwareDecoding": "false",
+        "ffmpegPresetEnabled": "false",
+        "ffmpegQualityEnabled": "false"
       },
       "fpEnabled": true,
       "id": "zUTrGaFHB",
       "position": {
-        "x": -370.03527379192855,
-        "y": 1475.5914544932568
+        "x": -432,
+        "y": 1476
       }
     },
     {
@@ -157,8 +163,8 @@
       "fpEnabled": true,
       "id": "eMjxTGUMF",
       "position": {
-        "x": 35.842577411624404,
-        "y": 1632.0881476391467
+        "x": 84,
+        "y": 1632
       }
     },
     {
@@ -173,8 +179,8 @@
       "fpEnabled": true,
       "id": "vDbAelujj",
       "position": {
-        "x": -107.63363978553936,
-        "y": 1559.0693684681858
+        "x": -36,
+        "y": 1548
       }
     },
     {
@@ -220,13 +226,15 @@
         "ffmpegQuality": "{{{args.userVariables.library.quality_level}}}",
         "hardwareEncoding": "true",
         "hardwareType": "nvenc",
-        "hardwareDecoding": "false"
+        "hardwareDecoding": "false",
+        "ffmpegQualityEnabled": "false",
+        "ffmpegPresetEnabled": "false"
       },
       "fpEnabled": true,
       "id": "mqT3eshxv",
       "position": {
-        "x": -528.7616417759564,
-        "y": 1400.9367423972444
+        "x": -612,
+        "y": 1404
       }
     },
     {
@@ -275,12 +283,12 @@
       }
     },
     {
-      "name": "Apply standard tuning",
+      "name": "Apply tuning (standard)",
       "sourceRepo": "Community",
       "pluginName": "ffmpegCommandCustomArguments",
       "version": "1.0.0",
       "inputsDB": {
-        "outputArguments": "-rc vbr_hq -tune hq -rc-lookahead 32 -spatial_aq 1 -aq-strength 8 -c:a copy -c:s copy"
+        "outputArguments": "-rc vbr -rc-lookahead 32 -spatial_aq 1 -aq-strength 8 -cq {{{args.userVariables.library.quality_level}}} -multipass 2pass-fullre"
       },
       "fpEnabled": true,
       "id": "ssm3z_AhC",
@@ -307,12 +315,12 @@
       }
     },
     {
-      "name": "tune for animation",
+      "name": "Apply tuning (animation)",
       "sourceRepo": "Community",
       "pluginName": "ffmpegCommandCustomArguments",
       "version": "1.0.0",
       "inputsDB": {
-        "outputArguments": "-rc vbr -tune animation -rc-lookahead 18 -spatial_aq 1 -aq-strength 10 -c:a copy -c:s copy"
+        "outputArguments": "-rc vbr -tune animation -rc-lookahead 18 -spatial_aq 1 -aq-strength 10 -cq {{{args.userVariables.library.quality_level}}} -multipass 2pass-fullre"
       },
       "fpEnabled": true,
       "id": "RVX-hRdj2",
@@ -1407,8 +1415,8 @@
       "fpEnabled": true,
       "id": "x1oqYsqnk",
       "position": {
-        "x": 10.910535663636367,
-        "y": 1719.8154310866676
+        "x": 60,
+        "y": 1752
       }
     },
     {
@@ -1559,6 +1567,66 @@
         "streamType": "video",
         "propertyToCheck": "scanType",
         "valuesToMatch": "progressive"
+      }
+    },
+    {
+      "name": "Custom Arguments (gpu SLOW override)",
+      "sourceRepo": "Community",
+      "pluginName": "ffmpegCommandCustomArguments",
+      "version": "1.0.0",
+      "id": "Ag8fwxry0",
+      "position": {
+        "x": -120,
+        "y": 1752
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "outputArguments": "-preset p7"
+      }
+    },
+    {
+      "name": "Custom Arguments (gpu MEDIUM override)",
+      "sourceRepo": "Community",
+      "pluginName": "ffmpegCommandCustomArguments",
+      "version": "1.0.0",
+      "id": "cePYBxD_x",
+      "position": {
+        "x": -276,
+        "y": 1692
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "outputArguments": "-preset p5"
+      }
+    },
+    {
+      "name": "Custom Arguments (gpu FAST override)",
+      "sourceRepo": "Community",
+      "pluginName": "ffmpegCommandCustomArguments",
+      "version": "1.0.0",
+      "id": "wR6-apUdR",
+      "position": {
+        "x": -432,
+        "y": 1596
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "outputArguments": "-preset p3"
+      }
+    },
+    {
+      "name": "Custom Arguments (gpu FASTER override)",
+      "sourceRepo": "Community",
+      "pluginName": "ffmpegCommandCustomArguments",
+      "version": "1.0.0",
+      "id": "XHIbDNB34",
+      "position": {
+        "x": -612,
+        "y": 1560
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "outputArguments": "-preset p2"
       }
     }
   ],
@@ -2369,34 +2437,6 @@
       "id": "chefUtTsX"
     },
     {
-      "source": "mqT3eshxv",
-      "sourceHandle": "1",
-      "target": "jV3nVwvZa",
-      "targetHandle": null,
-      "id": "2D2CBaDA6"
-    },
-    {
-      "source": "zUTrGaFHB",
-      "sourceHandle": "1",
-      "target": "jV3nVwvZa",
-      "targetHandle": null,
-      "id": "K_wE8FOzF"
-    },
-    {
-      "source": "RSBUeAycC",
-      "sourceHandle": "1",
-      "target": "jV3nVwvZa",
-      "targetHandle": null,
-      "id": "acLVvhaao"
-    },
-    {
-      "source": "bfxO9efwr",
-      "sourceHandle": "1",
-      "target": "jV3nVwvZa",
-      "targetHandle": null,
-      "id": "V5mSRYz9C"
-    },
-    {
       "source": "0bmlQPqIK",
       "sourceHandle": "1",
       "target": "uY7ElPQva",
@@ -2654,6 +2694,62 @@
       "target": "31yo1LBVy",
       "targetHandle": null,
       "id": "D4EzWya5l"
+    },
+    {
+      "source": "bfxO9efwr",
+      "sourceHandle": "1",
+      "target": "Ag8fwxry0",
+      "targetHandle": null,
+      "id": "MM6SnSXtt"
+    },
+    {
+      "source": "Ag8fwxry0",
+      "sourceHandle": "1",
+      "target": "jV3nVwvZa",
+      "targetHandle": null,
+      "id": "PPaXLwa-0"
+    },
+    {
+      "source": "RSBUeAycC",
+      "sourceHandle": "1",
+      "target": "cePYBxD_x",
+      "targetHandle": null,
+      "id": "Yvetjfnu7"
+    },
+    {
+      "source": "cePYBxD_x",
+      "sourceHandle": "1",
+      "target": "jV3nVwvZa",
+      "targetHandle": null,
+      "id": "wVSINbqKK"
+    },
+    {
+      "source": "zUTrGaFHB",
+      "sourceHandle": "1",
+      "target": "wR6-apUdR",
+      "targetHandle": null,
+      "id": "g21z5by_Q"
+    },
+    {
+      "source": "wR6-apUdR",
+      "sourceHandle": "1",
+      "target": "jV3nVwvZa",
+      "targetHandle": null,
+      "id": "7Hl2xcwlv"
+    },
+    {
+      "source": "mqT3eshxv",
+      "sourceHandle": "1",
+      "target": "XHIbDNB34",
+      "targetHandle": null,
+      "id": "wXWX3IFR4"
+    },
+    {
+      "source": "XHIbDNB34",
+      "sourceHandle": "1",
+      "target": "jV3nVwvZa",
+      "targetHandle": null,
+      "id": "5X6M8JYjo"
     }
   ]
 }
