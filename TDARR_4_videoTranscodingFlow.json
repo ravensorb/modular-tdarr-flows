@@ -113,7 +113,7 @@
       "fpEnabled": true,
       "id": "RSBUeAycC",
       "position": {
-        "x": -240,
+        "x": -252,
         "y": 1560
       }
     },
@@ -256,7 +256,7 @@
       "version": "1.0.0",
       "inputsDB": {
         "value": "faster",
-        "variable": "{{{{args.userVariables.library.ffmpeg_preset}}}"
+        "variable": "{{{args.userVariables.library.ffmpeg_preset}}}"
       },
       "fpEnabled": true,
       "id": "UIrqIm9JW",
@@ -288,7 +288,7 @@
       "pluginName": "ffmpegCommandCustomArguments",
       "version": "1.0.0",
       "inputsDB": {
-        "outputArguments": "-rc vbr -rc-lookahead 32 -spatial_aq 1 -aq-strength 8 -cq {{{args.userVariables.library.quality_level}}} -multipass 2pass-fullre"
+        "outputArguments": "-rc vbr -rc-lookahead 32 -spatial_aq 1 -aq-strength 8 -cq {{{args.userVariables.library.quality_level}}} -multipass 2pass-fullres"
       },
       "fpEnabled": true,
       "id": "ssm3z_AhC",
@@ -320,7 +320,7 @@
       "pluginName": "ffmpegCommandCustomArguments",
       "version": "1.0.0",
       "inputsDB": {
-        "outputArguments": "-rc vbr -tune animation -rc-lookahead 18 -spatial_aq 1 -aq-strength 10 -cq {{{args.userVariables.library.quality_level}}} -multipass 2pass-fullre"
+        "outputArguments": "-rc vbr -tune animation -rc-lookahead 18 -spatial_aq 1 -aq-strength 10 -cq {{{args.userVariables.library.quality_level}}} -multipass 2pass-fullres"
       },
       "fpEnabled": true,
       "id": "RVX-hRdj2",
