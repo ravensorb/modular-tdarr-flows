@@ -67,12 +67,12 @@
       }
     },
     {
-      "name": "It's not a movie either, but Is is_foreign == true?",
+      "name": "It's not a movie either, but Is isForeign == true?",
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
       "inputsDB": {
-        "variable": "{{{args.userVariables.library.is_foreign}}}",
+        "variable": "{{{args.userVariables.library.isForeign}}}",
         "value": "true",
         "condition": "=="
       },
@@ -173,7 +173,7 @@
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
       "inputsDB": {
-        "variable": "{{{args.userVariables.library.enable_control_flow}}}",
+        "variable": "{{{args.userVariables.library.enableControlFlow}}}",
         "value": "true"
       },
       "fpEnabled": true,
@@ -218,7 +218,7 @@
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
       "inputsDB": {
-        "variable": "{{{args.userVariables.library.enable_control_flow}}}",
+        "variable": "{{{args.userVariables.library.enableControlFlow}}}",
         "value": "true"
       },
       "fpEnabled": true,
@@ -301,7 +301,7 @@
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
       "inputsDB": {
-        "variable": "{{{args.userVariables.library.enable_control_flow}}}",
+        "variable": "{{{args.userVariables.library.enableControlFlow}}}",
         "value": "true"
       },
       "fpEnabled": true,
@@ -350,7 +350,7 @@
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
       "inputsDB": {
-        "variable": "{{{args.userVariables.library.enable_audio_cleaning}}}",
+        "variable": "{{{args.userVariables.library.enableAudioCleaning}}}",
         "value": "true",
         "condition": "=="
       },

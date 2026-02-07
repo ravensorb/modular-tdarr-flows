@@ -922,7 +922,7 @@
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
       "inputsDB": {
-        "variable": "{{{args.userVariables.library.enable_control_flow}}}",
+        "variable": "{{{args.userVariables.library.enableControlFlow}}}",
         "value": "true"
       },
       "fpEnabled": true,
@@ -967,7 +967,7 @@
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
       "inputsDB": {
-        "variable": "{{{args.userVariables.library.enable_control_flow}}}",
+        "variable": "{{{args.userVariables.library.enableControlFlow}}}",
         "value": "true"
       },
       "fpEnabled": true,
@@ -1052,7 +1052,7 @@
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
       "inputsDB": {
-        "variable": "{{{args.userVariables.library.enable_control_flow}}}",
+        "variable": "{{{args.userVariables.library.enableControlFlow}}}",
         "value": "true"
       },
       "fpEnabled": true,
@@ -1101,7 +1101,7 @@
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
       "inputsDB": {
-        "variable": "{{{args.userVariables.library.enable_audio_transcoding}}}",
+        "variable": "{{{args.userVariables.library.enableAudioTranscoding}}}",
         "value": "true",
         "condition": "=="
       },
@@ -1337,7 +1337,7 @@
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
       "inputsDB": {
-        "variable": "{{{args.userVariables.library.is_foreign}}}",
+        "variable": "{{{args.userVariables.library.isForeign}}}",
         "value": "true"
       },
       "fpEnabled": true,
@@ -1397,7 +1397,7 @@
       "version": "1.0.0",
       "inputsDB": {
         "value": "true",
-        "variable": "{{{args.userVariables.library.is_remux}}}"
+        "variable": "{{{args.userVariables.library.isRemux}}}"
       },
       "fpEnabled": true,
       "id": "7ArsDnjTp",
@@ -1444,6 +1444,37 @@
       "position": {
         "x": 1731.121714617911,
         "y": 2432.2024394662008
+      }
+    },
+    {
+      "name": "🔊 | ❓ Loudnorm enabled?",
+      "sourceRepo": "Community",
+      "pluginName": "checkFlowVariable",
+      "version": "1.0.0",
+      "inputsDB": {
+        "variable": "{{{args.userVariables.library.enableLoudnorm}}}",
+        "value": "true"
+      },
+      "fpEnabled": true,
+      "id": "LN_chk",
+      "position": {
+        "x": 1568,
+        "y": 2030
+      }
+    },
+    {
+      "name": "🔊 | 📊 Apply Loudnorm (EBU R128)",
+      "sourceRepo": "Community",
+      "pluginName": "ffmpegCommandCustomArguments",
+      "version": "1.0.0",
+      "inputsDB": {
+        "outputArguments": "-af loudnorm=I=-14:LRA=11:TP=-1 -c:v copy -c:s copy -c:a aac"
+      },
+      "fpEnabled": true,
+      "id": "LN_ffcmd",
+      "position": {
+        "x": 1568,
+        "y": 2070
       }
     }
   ],
@@ -1899,7 +1930,7 @@
     {
       "source": "O0DyltkUI",
       "sourceHandle": "1",
-      "target": "LSeLIvmgj",
+      "target": "LN_chk",
       "targetHandle": null,
       "id": "8N9zORr5i"
     },
@@ -2532,6 +2563,34 @@
       "target": "Tv4RkmGJt",
       "targetHandle": null,
       "id": "SawbLmLTw"
+    },
+    {
+      "source": "LN_chk",
+      "sourceHandle": "1",
+      "target": "LN_ffcmd",
+      "targetHandle": null,
+      "id": "LN_e01"
+    },
+    {
+      "source": "LN_chk",
+      "sourceHandle": "2",
+      "target": "LSeLIvmgj",
+      "targetHandle": null,
+      "id": "LN_e02"
+    },
+    {
+      "source": "LN_ffcmd",
+      "sourceHandle": "1",
+      "target": "LSeLIvmgj",
+      "targetHandle": null,
+      "id": "LN_e03"
+    },
+    {
+      "source": "LN_ffcmd",
+      "sourceHandle": "err1",
+      "target": "LSeLIvmgj",
+      "targetHandle": null,
+      "id": "LN_e04"
     }
   ]
 }

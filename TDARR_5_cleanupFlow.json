@@ -10,7 +10,7 @@
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
       "inputsDB": {
-        "variable": "{{{args.userVariables.library.is_remux}}}",
+        "variable": "{{{args.userVariables.library.isRemux}}}",
         "value": "true"
       },
       "fpEnabled": true,
@@ -125,7 +125,7 @@
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
       "inputsDB": {
-        "variable": "{{{args.userVariables.global.single_node_mode}}}",
+        "variable": "{{{args.userVariables.global.singleNodeMode}}}",
         "value": "true"
       },
       "fpEnabled": true,
@@ -153,7 +153,7 @@
       "pluginName": "moveToDirectory",
       "version": "2.0.0",
       "inputsDB": {
-        "outputDirectory": "{{{args.userVariables.global.remux_output_path}}}",
+        "outputDirectory": "{{{args.userVariables.global.remuxOutputPath}}}",
         "keepRelativePath": "true"
       },
       "fpEnabled": true,

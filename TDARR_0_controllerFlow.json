@@ -144,7 +144,7 @@
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
       "inputsDB": {
-        "variable": "{{{args.userVariables.library.enable_notifications}}}",
+        "variable": "{{{args.userVariables.library.enableNotifications}}}",
         "value": "true",
         "condition": "!="
       },
@@ -161,7 +161,7 @@
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
       "inputsDB": {
-        "variable": "{{{args.userVariables.library.is_remux}}}",
+        "variable": "{{{args.userVariables.library.isRemux}}}",
         "value": "true"
       },
       "fpEnabled": true,
@@ -177,7 +177,7 @@
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
       "inputsDB": {
-        "variable": "{{{args.userVariables.global.single_node_mode}}}",
+        "variable": "{{{args.userVariables.global.singleNodeMode}}}",
         "value": "true"
       },
       "fpEnabled": true,
@@ -240,7 +240,7 @@
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
       "inputsDB": {
-        "variable": "{{{args.userVariables.library.enable_video_transcoding}}}",
+        "variable": "{{{args.userVariables.library.enableVideoTranscoding}}}",
         "value": "false"
       },
       "fpEnabled": true,
@@ -324,7 +324,7 @@
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
       "inputsDB": {
-        "variable": "{{{args.userVariables.library.enable_audio_transcoding}}}",
+        "variable": "{{{args.userVariables.library.enableAudioTranscoding}}}",
         "value": "false"
       },
       "fpEnabled": true,
@@ -436,7 +436,7 @@
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
       "inputsDB": {
-        "variable": "{{{args.userVariables.library.enable_audio_cleaning}}}",
+        "variable": "{{{args.userVariables.library.enableAudioCleaning}}}",
         "value": "false"
       },
       "fpEnabled": true,
@@ -507,7 +507,7 @@
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
       "inputsDB": {
-        "variable": "{{{args.userVariables.library.enable_subs_cleaning}}}",
+        "variable": "{{{args.userVariables.library.enableSubsCleaning}}}",
         "value": "false"
       },
       "fpEnabled": true,
@@ -563,7 +563,7 @@
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
       "inputsDB": {
-        "variable": "{{{args.userVariables.global.single_node_mode}}}",
+        "variable": "{{{args.userVariables.global.singleNodeMode}}}",
         "value": "true"
       },
       "fpEnabled": true,
@@ -703,7 +703,7 @@
       "inputsDB": {
         "value": "true",
         "condition": "!=",
-        "variable": "{{{args.userVariables.library.check_hardlinks}}}"
+        "variable": "{{{args.userVariables.library.checkHardlinks}}}"
       },
       "fpEnabled": true,
       "id": "A_I5epkJ_",

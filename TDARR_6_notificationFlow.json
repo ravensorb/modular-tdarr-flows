@@ -857,7 +857,7 @@
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
       "inputsDB": {
-        "variable": "{{{args.userVariables.library.enable_notifications}}}",
+        "variable": "{{{args.userVariables.library.enableNotifications}}}",
         "value": "true"
       },
       "fpEnabled": true,

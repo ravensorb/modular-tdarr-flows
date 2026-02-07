@@ -81,7 +81,7 @@
       "inputsDB": {
         "outputCodec": "hevc",
         "ffmpegPreset": "slow",
-        "ffmpegQuality": "{{{args.userVariables.library.quality_level}}}",
+        "ffmpegQuality": "{{{args.userVariables.library.qualityLevel}}}",
         "hardwareEncoding": "true",
         "hardwareType": "nvenc",
         "hardwareDecoding": "false",
@@ -103,7 +103,7 @@
       "inputsDB": {
         "outputCodec": "hevc",
         "ffmpegPreset": "medium",
-        "ffmpegQuality": "{{{args.userVariables.library.quality_level}}}",
+        "ffmpegQuality": "{{{args.userVariables.library.qualityLevel}}}",
         "hardwareEncoding": "true",
         "hardwareType": "nvenc",
         "hardwareDecoding": "false",
@@ -125,7 +125,7 @@
       "inputsDB": {
         "outputCodec": "hevc",
         "ffmpegPreset": "fast",
-        "ffmpegQuality": "{{{args.userVariables.library.quality_level}}}",
+        "ffmpegQuality": "{{{args.userVariables.library.qualityLevel}}}",
         "hardwareEncoding": "true",
         "hardwareType": "nvenc",
         "hardwareDecoding": "false",
@@ -140,7 +140,7 @@
       }
     },
     {
-      "name": "If quality_level is not set, fallback to medium",
+      "name": "If qualityLevel is not set, fallback to medium",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
@@ -152,13 +152,13 @@
       }
     },
     {
-      "name": "is ffmpeg_preset = slower?",
+      "name": "is ffmpegPreset = slower?",
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
       "inputsDB": {
         "value": "slower",
-        "variable": "{{{args.userVariables.library.ffmpeg_preset}}}"
+        "variable": "{{{args.userVariables.library.ffmpegPreset}}}"
       },
       "fpEnabled": true,
       "id": "eMjxTGUMF",
@@ -168,13 +168,13 @@
       }
     },
     {
-      "name": "is ffmpeg_preset = slow?",
+      "name": "is ffmpegPreset = slow?",
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
       "inputsDB": {
         "value": "slow",
-        "variable": "{{{args.userVariables.library.ffmpeg_preset}}}"
+        "variable": "{{{args.userVariables.library.ffmpegPreset}}}"
       },
       "fpEnabled": true,
       "id": "vDbAelujj",
@@ -184,13 +184,13 @@
       }
     },
     {
-      "name": "is ffmpeg_preset = medium?",
+      "name": "is ffmpegPreset = medium?",
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
       "inputsDB": {
         "value": "medium",
-        "variable": "{{{args.userVariables.library.ffmpeg_preset}}}"
+        "variable": "{{{args.userVariables.library.ffmpegPreset}}}"
       },
       "fpEnabled": true,
       "id": "ixZp_ki7j",
@@ -200,13 +200,13 @@
       }
     },
     {
-      "name": "is ffmpeg_preset = fast?",
+      "name": "is ffmpegPreset = fast?",
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
       "inputsDB": {
         "value": "fast",
-        "variable": "{{{args.userVariables.library.ffmpeg_preset}}}"
+        "variable": "{{{args.userVariables.library.ffmpegPreset}}}"
       },
       "fpEnabled": true,
       "id": "BvmWcuRmu",
@@ -223,7 +223,7 @@
       "inputsDB": {
         "outputCodec": "hevc",
         "ffmpegPreset": "faster",
-        "ffmpegQuality": "{{{args.userVariables.library.quality_level}}}",
+        "ffmpegQuality": "{{{args.userVariables.library.qualityLevel}}}",
         "hardwareEncoding": "true",
         "hardwareType": "nvenc",
         "hardwareDecoding": "false",
@@ -238,7 +238,7 @@
       }
     },
     {
-      "name": "Decide which quality level to use based off library variable 'quality_level'",
+      "name": "Decide which quality level to use based off library variable 'qualityLevel'",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
@@ -250,13 +250,13 @@
       }
     },
     {
-      "name": "is ffmpeg_preset = faster?",
+      "name": "is ffmpegPreset = faster?",
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
       "inputsDB": {
         "value": "faster",
-        "variable": "{{{args.userVariables.library.ffmpeg_preset}}}"
+        "variable": "{{{args.userVariables.library.ffmpegPreset}}}"
       },
       "fpEnabled": true,
       "id": "UIrqIm9JW",
@@ -272,7 +272,7 @@
       "version": "1.0.0",
       "inputsDB": {
         "value": "true",
-        "variable": "{{{args.userVariables.library.is_animated}}}",
+        "variable": "{{{args.userVariables.library.isAnimated}}}",
         "condition": "!="
       },
       "fpEnabled": true,
@@ -288,7 +288,7 @@
       "pluginName": "ffmpegCommandCustomArguments",
       "version": "1.0.0",
       "inputsDB": {
-        "outputArguments": "-rc vbr -rc-lookahead 32 -spatial_aq 1 -aq-strength 8 -cq {{{args.userVariables.library.quality_level}}} -multipass fullres"
+        "outputArguments": "-rc vbr -rc-lookahead 32 -spatial_aq 1 -aq-strength 8 -cq {{{args.userVariables.library.qualityLevel}}} -multipass fullres"
       },
       "fpEnabled": true,
       "id": "ssm3z_AhC",
@@ -320,7 +320,7 @@
       "pluginName": "ffmpegCommandCustomArguments",
       "version": "1.0.0",
       "inputsDB": {
-        "outputArguments": "-rc vbr -tune animation -rc-lookahead 18 -spatial_aq 1 -aq-strength 10 -cq {{{args.userVariables.library.quality_level}}} -multipass fullres"
+        "outputArguments": "-rc vbr -tune animation -rc-lookahead 18 -spatial_aq 1 -aq-strength 10 -cq {{{args.userVariables.library.qualityLevel}}} -multipass fullres"
       },
       "fpEnabled": true,
       "id": "RVX-hRdj2",
@@ -336,8 +336,8 @@
       "version": "2.0.0",
       "inputsDB": {
         "pluginSourceId": "Community:Tdarr_Plugin_a9he_New_file_size_check",
-        "lowerBound": "{{{args.userVariables.library.file_size_lower_bound}}}",
-        "upperBound": "{{{args.userVariables.library.file_size_upper_bound}}}"
+        "lowerBound": "{{{args.userVariables.library.fileSizeLowerBound}}}",
+        "upperBound": "{{{args.userVariables.library.fileSizeUpperBound}}}"
       },
       "fpEnabled": true,
       "id": "__aruWpNb",
@@ -396,7 +396,7 @@
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
       "inputsDB": {
-        "variable": "{{{args.userVariables.library.enable_control_flow}}}",
+        "variable": "{{{args.userVariables.library.enableControlFlow}}}",
         "value": "true"
       },
       "fpEnabled": true,
@@ -435,7 +435,7 @@
       }
     },
     {
-      "name": "Decide which quality level to use based off library variable 'quality_level'",
+      "name": "Decide which quality level to use based off library variable 'qualityLevel'",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
@@ -454,7 +454,7 @@
       "inputsDB": {
         "outputCodec": "hevc",
         "ffmpegPreset": "faster",
-        "ffmpegQuality": "{{{args.userVariables.library.quality_level}}}",
+        "ffmpegQuality": "{{{args.userVariables.library.qualityLevel}}}",
         "hardwareEncoding": "false"
       },
       "fpEnabled": true,
@@ -465,13 +465,13 @@
       }
     },
     {
-      "name": "is ffmpeg_preset = faster?",
+      "name": "is ffmpegPreset = faster?",
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
       "inputsDB": {
         "value": "faster",
-        "variable": "{{{args.userVariables.library.ffmpeg_preset}}}"
+        "variable": "{{{args.userVariables.library.ffmpegPreset}}}"
       },
       "fpEnabled": true,
       "id": "9JFl9MsWX",
@@ -488,7 +488,7 @@
       "inputsDB": {
         "outputCodec": "hevc",
         "ffmpegPreset": "slower",
-        "ffmpegQuality": "{{{args.userVariables.library.quality_level}}}",
+        "ffmpegQuality": "{{{args.userVariables.library.qualityLevel}}}",
         "hardwareEncoding": "false"
       },
       "fpEnabled": true,
@@ -499,13 +499,13 @@
       }
     },
     {
-      "name": "is ffmpeg_preset = slower?",
+      "name": "is ffmpegPreset = slower?",
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
       "inputsDB": {
         "value": "slower",
-        "variable": "{{{args.userVariables.library.ffmpeg_preset}}}"
+        "variable": "{{{args.userVariables.library.ffmpegPreset}}}"
       },
       "fpEnabled": true,
       "id": "WacgxDBP_",
@@ -515,13 +515,13 @@
       }
     },
     {
-      "name": "is ffmpeg_preset = slow?",
+      "name": "is ffmpegPreset = slow?",
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
       "inputsDB": {
         "value": "slow",
-        "variable": "{{{args.userVariables.library.ffmpeg_preset}}}"
+        "variable": "{{{args.userVariables.library.ffmpegPreset}}}"
       },
       "fpEnabled": true,
       "id": "hxCvrSFf5",
@@ -538,7 +538,7 @@
       "inputsDB": {
         "outputCodec": "hevc",
         "ffmpegPreset": "fast",
-        "ffmpegQuality": "{{{args.userVariables.library.quality_level}}}",
+        "ffmpegQuality": "{{{args.userVariables.library.qualityLevel}}}",
         "hardwareEncoding": "false"
       },
       "fpEnabled": true,
@@ -556,7 +556,7 @@
       "inputsDB": {
         "outputCodec": "hevc",
         "ffmpegPreset": "medium",
-        "ffmpegQuality": "{{{args.userVariables.library.quality_level}}}",
+        "ffmpegQuality": "{{{args.userVariables.library.qualityLevel}}}",
         "hardwareEncoding": "false"
       },
       "fpEnabled": true,
@@ -574,7 +574,7 @@
       "inputsDB": {
         "outputCodec": "hevc",
         "ffmpegPreset": "slow",
-        "ffmpegQuality": "{{{args.userVariables.library.quality_level}}}",
+        "ffmpegQuality": "{{{args.userVariables.library.qualityLevel}}}",
         "hardwareEncoding": "false"
       },
       "fpEnabled": true,
@@ -585,13 +585,13 @@
       }
     },
     {
-      "name": "is ffmpeg_preset = medium?",
+      "name": "is ffmpegPreset = medium?",
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
       "inputsDB": {
         "value": "medium",
-        "variable": "{{{args.userVariables.library.ffmpeg_preset}}}"
+        "variable": "{{{args.userVariables.library.ffmpegPreset}}}"
       },
       "fpEnabled": true,
       "id": "UIzkZmDI_",
@@ -633,7 +633,7 @@
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
       "inputsDB": {
-        "variable": "{{{args.userVariables.global.single_node_mode}}}",
+        "variable": "{{{args.userVariables.global.singleNodeMode}}}",
         "value": "true"
       },
       "fpEnabled": true,
@@ -1156,7 +1156,7 @@
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
       "inputsDB": {
-        "variable": "{{{args.userVariables.library.use_nvenc}}}",
+        "variable": "{{{args.userVariables.library.useNvenc}}}",
         "value": "true"
       },
       "fpEnabled": true,
@@ -1172,7 +1172,7 @@
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
       "inputsDB": {
-        "variable": "{{{args.userVariables.global.single_node_mode}}}",
+        "variable": "{{{args.userVariables.global.singleNodeMode}}}",
         "value": "true"
       },
       "fpEnabled": true,
@@ -1204,7 +1204,7 @@
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
       "inputsDB": {
-        "variable": "{{{args.userVariables.global.single_node_mode}}}",
+        "variable": "{{{args.userVariables.global.singleNodeMode}}}",
         "value": "true"
       },
       "fpEnabled": true,
@@ -1332,13 +1332,13 @@
       }
     },
     {
-      "name": "is ffmpeg_preset = fast?",
+      "name": "is ffmpegPreset = fast?",
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
       "inputsDB": {
         "value": "fast",
-        "variable": "{{{args.userVariables.library.ffmpeg_preset}}}"
+        "variable": "{{{args.userVariables.library.ffmpegPreset}}}"
       },
       "fpEnabled": true,
       "id": "LVyI_ZqR9",
@@ -1360,7 +1360,7 @@
       }
     },
     {
-      "name": "If quality_level is not set, fallback to medium",
+      "name": "If qualityLevel is not set, fallback to medium",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
@@ -1401,7 +1401,7 @@
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
       "inputsDB": {
-        "variable": "{{{args.userVariables.library.enable_control_flow}}}",
+        "variable": "{{{args.userVariables.library.enableControlFlow}}}",
         "value": "true"
       },
       "fpEnabled": true,
@@ -1433,7 +1433,7 @@
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
       "inputsDB": {
-        "variable": "{{{args.userVariables.library.enable_control_flow}}}",
+        "variable": "{{{args.userVariables.library.enableControlFlow}}}",
         "value": "true"
       },
       "fpEnabled": true,

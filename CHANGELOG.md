@@ -1,5 +1,37 @@
 # CHANGELOG
 
+## v1.3.0
+
+### Breaking Changes
+
+- **All variable names renamed from `snake_case` to `camelCase`.** See
+  [UPGRADING.md](UPGRADING.md) for the full migration guide and variable
+  mapping.
+
+### Added
+
+- `enableLoudnorm` library variable for optional EBU R128 loudnorm audio
+  normalization in the audio transcoding flow
+- `singleNodeMode` global variable with `checkFlowVariable` bypass nodes for
+  worker type tags across controller, video transcoding, and cleanup flows
+- `enableNotifications` library variable gate in notification flow
+- `fileSizeLowerBound` and `fileSizeUpperBound` library variables for
+  configurable file size checks in video transcoding flow
+- Checkpoint and hardlink documentation sections in README
+- Loudnorm documentation section in README
+- Getting Started guide with requirements, required plugins, and quick start
+- [UPGRADING.md](UPGRADING.md) migration guide for breaking changes
+
+### Fixed
+
+- Standardized checkpoint variable to `useCheckpoints` (was inconsistently
+  `use_checkpoints` in one location)
+- Fixed extra `{` in CPU faster preset variable template in video transcoding
+  flow
+- Replaced hardcoded NAS path with `remuxOutputPath` global variable in cleanup
+  flow
+- Fixed `url_plex` typo in README global variables table
+
 ## v1.2.0 - March 4, 2025
 
 ### Added
@@ -20,9 +52,9 @@
 
 ### Added
 
-- `use_checkpoints` variable for overwriting source files after each flow is
+- `useCheckpoints` variable for overwriting source files after each flow is
   complete
-- `check_hardlinks` variable to filter out any files that may be used other
+- `checkHardlinks` variable to filter out any files that may be used other
   places that we don't want to touch
 - Created the changelog file you're reading right now
 - Updated README to include info about new variables
