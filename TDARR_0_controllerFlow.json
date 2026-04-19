@@ -17,30 +17,6 @@
       }
     },
     {
-      "name": "🧠 | ☠️ Couldn't replace original file. Continuing Anyways.",
-      "sourceRepo": "Community",
-      "pluginName": "resetFlowError",
-      "version": "1.0.0",
-      "fpEnabled": true,
-      "id": "OA4Q_WmHF",
-      "position": {
-        "x": 2231.1019443013342,
-        "y": 561.8232602068343
-      }
-    },
-    {
-      "name": "🧠 | ☠️ Couldn't replace original file. Continuing Anyways.",
-      "sourceRepo": "Community",
-      "pluginName": "resetFlowError",
-      "version": "1.0.0",
-      "fpEnabled": true,
-      "id": "WdvA3HOUX",
-      "position": {
-        "x": 2230.358841633222,
-        "y": 401.34699622572
-      }
-    },
-    {
       "name": "🧠 | 🛬 Returned from Notification Flow",
       "sourceRepo": "Community",
       "pluginName": "comment",
@@ -81,70 +57,12 @@
       }
     },
     {
-      "name": "🧠 | 🔄 Replace Original File",
-      "sourceRepo": "Community",
-      "pluginName": "replaceOriginalFile",
-      "version": "1.0.0",
-      "fpEnabled": true,
-      "id": "ttGf1VcT3",
-      "position": {
-        "x": 2017.0583354746032,
-        "y": 577.1117863435873
-      }
-    },
-    {
-      "name": "🧠 | 🔄 Replace Original File",
-      "sourceRepo": "Community",
-      "pluginName": "replaceOriginalFile",
-      "version": "1.0.0",
-      "fpEnabled": true,
-      "id": "35KKNL1u0",
-      "position": {
-        "x": 2013.1186946869834,
-        "y": 416.0518063451278
-      }
-    },
-    {
-      "name": "🧠 | ❓ Are we using checkpoints?",
-      "sourceRepo": "Community",
-      "pluginName": "checkFlowVariable",
-      "version": "1.0.0",
-      "inputsDB": {
-        "condition": "!=",
-        "value": "true",
-        "variable": "{{{args.userVariables.library.useCheckpoints}}}"
-      },
-      "fpEnabled": true,
-      "id": "boPCWUo1B",
-      "position": {
-        "x": 1814.5929695172445,
-        "y": 577.052028898579
-      }
-    },
-    {
-      "name": "🧠 | ❓ Are we using checkpoints?",
-      "sourceRepo": "Community",
-      "pluginName": "checkFlowVariable",
-      "version": "1.0.0",
-      "inputsDB": {
-        "condition": "!=",
-        "value": "true",
-        "variable": "{{{args.userVariables.library.useCheckpoints}}}"
-      },
-      "fpEnabled": true,
-      "id": "VZP19ytDk",
-      "position": {
-        "x": 1809.9393405747808,
-        "y": 416.4311707876495
-      }
-    },
-    {
       "name": "🧠 | ❓ Are Notifications Disabled?",
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
       "inputsDB": {
-        "variable": "{{{args.userVariables.library.enableNotifications}}}",
+        "variable": "{{{args.userVariables.library.enable_notifications}}}",
         "value": "true",
         "condition": "!="
       },
@@ -161,7 +79,7 @@
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
       "inputsDB": {
-        "variable": "{{{args.userVariables.library.isRemux}}}",
+        "variable": "{{{args.userVariables.library.is_remux}}}",
         "value": "true"
       },
       "fpEnabled": true,
@@ -169,37 +87,6 @@
       "position": {
         "x": 734.5580005371207,
         "y": -21.05535969221296
-      }
-    },
-    {
-      "name": "🧠 | ❓ Single Node Mode? (skip PC tag)",
-      "sourceRepo": "Community",
-      "pluginName": "checkFlowVariable",
-      "version": "1.0.0",
-      "inputsDB": {
-        "variable": "{{{args.userVariables.global.singleNodeMode}}}",
-        "value": "true"
-      },
-      "fpEnabled": true,
-      "id": "SNMpc_chk",
-      "position": {
-        "x": 990,
-        "y": 50
-      }
-    },
-    {
-      "name": "🧠 | 🤖 Tags: Worker Type (PC)",
-      "sourceRepo": "Community",
-      "pluginName": "tagsWorkerType",
-      "version": "1.0.0",
-      "inputsDB": {
-        "requiredNodeTags": "pc-only"
-      },
-      "fpEnabled": true,
-      "id": "JqxAaZQvt",
-      "position": {
-        "x": 990.2120483460512,
-        "y": 112.98194873889776
       }
     },
     {
@@ -240,7 +127,7 @@
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
       "inputsDB": {
-        "variable": "{{{args.userVariables.library.enableVideoTranscoding}}}",
+        "variable": "{{{args.userVariables.library.enable_video_transcoding}}}",
         "value": "false"
       },
       "fpEnabled": true,
@@ -324,7 +211,7 @@
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
       "inputsDB": {
-        "variable": "{{{args.userVariables.library.enableAudioTranscoding}}}",
+        "variable": "{{{args.userVariables.library.enable_audio_transcoding}}}",
         "value": "false"
       },
       "fpEnabled": true,
@@ -436,7 +323,7 @@
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
       "inputsDB": {
-        "variable": "{{{args.userVariables.library.enableAudioCleaning}}}",
+        "variable": "{{{args.userVariables.library.enable_audio_cleaning}}}",
         "value": "false"
       },
       "fpEnabled": true,
@@ -507,7 +394,7 @@
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
       "inputsDB": {
-        "variable": "{{{args.userVariables.library.enableSubsCleaning}}}",
+        "variable": "{{{args.userVariables.library.enable_subs_cleaning}}}",
         "value": "false"
       },
       "fpEnabled": true,
@@ -555,37 +442,6 @@
       "position": {
         "x": 988.8214954496739,
         "y": 27.919419387240538
-      }
-    },
-    {
-      "name": "🧠 | ❓ Single Node Mode? (skip Media Server tag)",
-      "sourceRepo": "Community",
-      "pluginName": "checkFlowVariable",
-      "version": "1.0.0",
-      "inputsDB": {
-        "variable": "{{{args.userVariables.global.singleNodeMode}}}",
-        "value": "true"
-      },
-      "fpEnabled": true,
-      "id": "SNMms_chk",
-      "position": {
-        "x": 736,
-        "y": -740
-      }
-    },
-    {
-      "name": "🧠 | 🤖 Tags: Worker Type (MEDIA SERVER)",
-      "sourceRepo": "Community",
-      "pluginName": "tagsWorkerType",
-      "version": "1.0.0",
-      "inputsDB": {
-        "requiredNodeTags": "media-server-only"
-      },
-      "fpEnabled": true,
-      "id": "9dk_w0FfB",
-      "position": {
-        "x": 736.1204846082276,
-        "y": -673.7197956495734
       }
     },
     {
@@ -703,7 +559,7 @@
       "inputsDB": {
         "value": "true",
         "condition": "!=",
-        "variable": "{{{args.userVariables.library.checkHardlinks}}}"
+        "variable": "{{{args.userVariables.library.check_hardlinks}}}"
       },
       "fpEnabled": true,
       "id": "A_I5epkJ_",
@@ -732,7 +588,7 @@
       "inputsDB": {
         "condition": "!=",
         "value": "true",
-        "variable": "{{{args.userVariables.library.useCheckpoints}}}"
+        "variable": "{{{args.userVariables.library.use_checkpoints}}}"
       },
       "fpEnabled": true,
       "id": "8Mjm7I-8f",
@@ -979,34 +835,6 @@
       "id": "vVp_Uyf3q"
     },
     {
-      "source": "kgrnNlrq-",
-      "sourceHandle": "1",
-      "target": "SNMpc_chk",
-      "targetHandle": null,
-      "id": "vk2NGWWoL"
-    },
-    {
-      "source": "SNMpc_chk",
-      "sourceHandle": "2",
-      "target": "JqxAaZQvt",
-      "targetHandle": null,
-      "id": "SNMpc_e01"
-    },
-    {
-      "source": "SNMpc_chk",
-      "sourceHandle": "1",
-      "target": "r2AHO6udX",
-      "targetHandle": null,
-      "id": "SNMpc_e02"
-    },
-    {
-      "source": "JqxAaZQvt",
-      "sourceHandle": "1",
-      "target": "r2AHO6udX",
-      "targetHandle": null,
-      "id": "OQLrevFVK"
-    },
-    {
       "source": "UzXrbJfuH",
       "sourceHandle": "2",
       "target": "kgrnNlrq-",
@@ -1040,27 +868,6 @@
       "target": "4kgU3zJ7C",
       "targetHandle": null,
       "id": "AHF50zzwY"
-    },
-    {
-      "source": "BoW-FQxbG",
-      "sourceHandle": "2",
-      "target": "SNMms_chk",
-      "targetHandle": null,
-      "id": "6CDuGXL4n"
-    },
-    {
-      "source": "SNMms_chk",
-      "sourceHandle": "2",
-      "target": "9dk_w0FfB",
-      "targetHandle": null,
-      "id": "SNMms_e01"
-    },
-    {
-      "source": "SNMms_chk",
-      "sourceHandle": "1",
-      "target": "A_I5epkJ_",
-      "targetHandle": null,
-      "id": "SNMms_e02"
     },
     {
       "source": "7IBdVnNvZ",
@@ -1119,13 +926,6 @@
       "id": "obMImmrOm"
     },
     {
-      "source": "9dk_w0FfB",
-      "sourceHandle": "1",
-      "target": "A_I5epkJ_",
-      "targetHandle": null,
-      "id": "MIRU3qD3I"
-    },
-    {
       "source": "A_I5epkJ_",
       "sourceHandle": "2",
       "target": "7IBdVnNvZ",
@@ -1173,62 +973,6 @@
       "target": "AQ8R5kct8",
       "targetHandle": null,
       "id": "g68vXVMUO"
-    },
-    {
-      "source": "pqhKCm7pB",
-      "sourceHandle": "1",
-      "target": "VZP19ytDk",
-      "targetHandle": null,
-      "id": "mFad5zBeL"
-    },
-    {
-      "source": "Rfx4VE1Nn",
-      "sourceHandle": "1",
-      "target": "boPCWUo1B",
-      "targetHandle": null,
-      "id": "8BdR0TwLT"
-    },
-    {
-      "source": "VZP19ytDk",
-      "sourceHandle": "1",
-      "target": "lI8uQokq_",
-      "targetHandle": null,
-      "id": "YvthXsig1"
-    },
-    {
-      "source": "boPCWUo1B",
-      "sourceHandle": "1",
-      "target": "U0uFOidd0",
-      "targetHandle": null,
-      "id": "6OHAMRfqs"
-    },
-    {
-      "source": "boPCWUo1B",
-      "sourceHandle": "2",
-      "target": "ttGf1VcT3",
-      "targetHandle": null,
-      "id": "6B19qdODo"
-    },
-    {
-      "source": "VZP19ytDk",
-      "sourceHandle": "2",
-      "target": "35KKNL1u0",
-      "targetHandle": null,
-      "id": "lJp5D5ab1"
-    },
-    {
-      "source": "35KKNL1u0",
-      "sourceHandle": "1",
-      "target": "lI8uQokq_",
-      "targetHandle": null,
-      "id": "8QQPDI7Xd"
-    },
-    {
-      "source": "ttGf1VcT3",
-      "sourceHandle": "1",
-      "target": "U0uFOidd0",
-      "targetHandle": null,
-      "id": "wwmGRkPvn"
     },
     {
       "source": "ZkTWMCpdx",
@@ -1308,27 +1052,6 @@
       "id": "oqCv4qKN6"
     },
     {
-      "source": "35KKNL1u0",
-      "sourceHandle": "err1",
-      "target": "WdvA3HOUX",
-      "targetHandle": null,
-      "id": "ZGdEO-6CF"
-    },
-    {
-      "source": "ttGf1VcT3",
-      "sourceHandle": "err1",
-      "target": "OA4Q_WmHF",
-      "targetHandle": null,
-      "id": "7weA0cnnf"
-    },
-    {
-      "source": "WdvA3HOUX",
-      "sourceHandle": "1",
-      "target": "lI8uQokq_",
-      "targetHandle": null,
-      "id": "80ZeXcuyz"
-    },
-    {
       "source": "PtKttHg9j",
       "sourceHandle": "1",
       "target": "Qx-16js51",
@@ -1336,11 +1059,32 @@
       "id": "BxUw8J806"
     },
     {
-      "source": "OA4Q_WmHF",
+      "source": "pqhKCm7pB",
+      "sourceHandle": "1",
+      "target": "lI8uQokq_",
+      "targetHandle": null,
+      "id": "pqhKCm7pB-1-lI8uQokq_-None"
+    },
+    {
+      "source": "Rfx4VE1Nn",
       "sourceHandle": "1",
       "target": "U0uFOidd0",
       "targetHandle": null,
-      "id": "fwLJbW_ma"
+      "id": "Rfx4VE1Nn-1-U0uFOidd0-None"
+    },
+    {
+      "source": "BoW-FQxbG",
+      "sourceHandle": "2",
+      "target": "A_I5epkJ_",
+      "targetHandle": null,
+      "id": "fix-BoW--2-A_I5"
+    },
+    {
+      "source": "kgrnNlrq-",
+      "sourceHandle": "1",
+      "target": "r2AHO6udX",
+      "targetHandle": null,
+      "id": "fix-kgrn-1-r2AH"
     }
   ]
 }
