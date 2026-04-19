@@ -17,34 +17,6 @@
       }
     },
     {
-      "name": "💬 | 🤖 Tags: Worker Type - Media Server Only",
-      "sourceRepo": "Community",
-      "pluginName": "tagsWorkerType",
-      "version": "1.0.0",
-      "inputsDB": {
-        "requiredWorkerType": "CPU",
-        "requiredNodeTags": "media-server-only"
-      },
-      "fpEnabled": false,
-      "id": "XzWolgr-5",
-      "position": {
-        "x": 446.9666705171544,
-        "y": 1123.9634422743923
-      }
-    },
-    {
-      "name": "💬 | 🫥 Couldn't copy. This could just mean no files were found. Resetting error and moving on",
-      "sourceRepo": "Community",
-      "pluginName": "resetFlowError",
-      "version": "1.0.0",
-      "fpEnabled": true,
-      "id": "HXCmY7ABl",
-      "position": {
-        "x": 627.5058524065524,
-        "y": 1262.6985976094213
-      }
-    },
-    {
       "name": "💬 | 😳 Wow good thing we checked",
       "sourceRepo": "Community",
       "pluginName": "comment",
@@ -108,7 +80,7 @@
       }
     },
     {
-      "name": "💬 | ✅ Done with CC/Burn-in Logic",
+      "name": "💬 | ✅ Done with CC/Burn-in Logic (no local subtitle muxing)",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
@@ -371,18 +343,6 @@
       }
     },
     {
-      "name": "💬 | 🫥 Welp, That Didn't Work. Reset Flow Error and Moving On",
-      "sourceRepo": "Community",
-      "pluginName": "resetFlowError",
-      "version": "1.0.0",
-      "fpEnabled": true,
-      "id": "KxopXNEqB",
-      "position": {
-        "x": 627.1537221567766,
-        "y": 1420.8154309022175
-      }
-    },
-    {
       "name": "💬 | 🫥 Welp, that didn't work. Reseting Any Flow Errors",
       "sourceRepo": "Community",
       "pluginName": "resetFlowError",
@@ -424,7 +384,7 @@
       }
     },
     {
-      "name": "💬 | 🇺🇸 English subtitles should always come first.",
+      "name": "💬 | 🇺🇸 English subtitles should always come first. Continue without local subtitle muxing",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
@@ -493,7 +453,7 @@
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
       "inputsDB": {
-        "variable": "{{{args.userVariables.library.enableControlFlow}}}",
+        "variable": "{{{args.userVariables.library.enable_control_flow}}}",
         "value": "true"
       },
       "fpEnabled": true,
@@ -533,7 +493,7 @@
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
       "inputsDB": {
-        "variable": "{{{args.userVariables.library.enableControlFlow}}}",
+        "variable": "{{{args.userVariables.library.enable_control_flow}}}",
         "value": "true"
       },
       "fpEnabled": true,
@@ -773,7 +733,7 @@
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
       "inputsDB": {
-        "variable": "{{{args.userVariables.library.enableSubsCleaning}}}",
+        "variable": "{{{args.userVariables.library.enable_subs_cleaning}}}",
         "value": "true"
       },
       "fpEnabled": true,
@@ -789,7 +749,7 @@
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
       "inputsDB": {
-        "variable": "{{{args.userVariables.library.enableControlFlow}}}",
+        "variable": "{{{args.userVariables.library.enable_control_flow}}}",
         "value": "true"
       },
       "fpEnabled": true,
@@ -904,22 +864,6 @@
       "position": {
         "x": 781.7327354058452,
         "y": 2343.696181832709
-      }
-    },
-    {
-      "name": "💬 | ✍️ Adding Local Subtitles (Including extracted ones)",
-      "sourceRepo": "Community",
-      "pluginName": "runClassicTranscodePlugin",
-      "version": "2.0.0",
-      "inputsDB": {
-        "pluginSourceId": "Community:Tdarr_Plugin_e5c3_CnT_Add_Subtitles",
-        "install_packages": "yes"
-      },
-      "fpEnabled": true,
-      "id": "tSforWSWr",
-      "position": {
-        "x": 446.20856080804657,
-        "y": 1370.394645819377
       }
     },
     {
@@ -1058,22 +1002,6 @@
       "position": {
         "x": 805.7304686364439,
         "y": -1451.7346237425375
-      }
-    },
-    {
-      "name": "💬 | 💾 Attempt to copy external subs from original directory to working directory",
-      "sourceRepo": "Community",
-      "pluginName": "copyMoveFolderContent",
-      "version": "1.0.0",
-      "inputsDB": {
-        "fileExtensions": "srt,ass",
-        "outputDirectory": "{{{args.workDir}}}"
-      },
-      "fpEnabled": true,
-      "id": "DGdizbbma",
-      "position": {
-        "x": 446.5294720707418,
-        "y": 1212.3274999237956
       }
     },
     {
@@ -1383,13 +1311,6 @@
       "id": "wSkxI4ToE"
     },
     {
-      "source": "tSforWSWr",
-      "sourceHandle": "err1",
-      "target": "KxopXNEqB",
-      "targetHandle": null,
-      "id": "ueN-tJ5Ve"
-    },
-    {
       "source": "nSGjtN9e7",
       "sourceHandle": "2",
       "target": "8SXqW9sLU",
@@ -1455,9 +1376,9 @@
     {
       "source": "d_SuL1jBv",
       "sourceHandle": "err1",
-      "target": "SrnKqpyjZ",
+      "target": "sU_A71hQU",
       "targetHandle": null,
-      "id": "6pOzJBJYz"
+      "id": "fix-missing-eia608-error-target"
     },
     {
       "source": "UoPfcsAg7",
@@ -1740,27 +1661,6 @@
       "id": "XcVxLkEyF"
     },
     {
-      "source": "KxopXNEqB",
-      "sourceHandle": "1",
-      "target": "krw2Ezrcf",
-      "targetHandle": null,
-      "id": "YmH06IjEl"
-    },
-    {
-      "source": "tSforWSWr",
-      "sourceHandle": "2",
-      "target": "krw2Ezrcf",
-      "targetHandle": null,
-      "id": "H7aqJXV0P"
-    },
-    {
-      "source": "tSforWSWr",
-      "sourceHandle": "1",
-      "target": "krw2Ezrcf",
-      "targetHandle": null,
-      "id": "x3sMclPK6"
-    },
-    {
       "source": "EfBK8ZU7C",
       "sourceHandle": "2",
       "target": "SAbAeyVbk",
@@ -1824,46 +1724,11 @@
       "id": "0Y_EVWYhK"
     },
     {
-      "source": "DGdizbbma",
-      "sourceHandle": "err1",
-      "target": "HXCmY7ABl",
-      "targetHandle": null,
-      "id": "MI5sWEn4k"
-    },
-    {
-      "source": "DGdizbbma",
-      "sourceHandle": "1",
-      "target": "tSforWSWr",
-      "targetHandle": null,
-      "id": "FSy38DOJK"
-    },
-    {
-      "source": "HXCmY7ABl",
-      "sourceHandle": "1",
-      "target": "tSforWSWr",
-      "targetHandle": null,
-      "id": "kUvFRDGK4"
-    },
-    {
       "source": "BrN7zhTEV",
       "sourceHandle": "1",
       "target": "8Bjx4hOet",
       "targetHandle": null,
       "id": "GsoX7qy3R"
-    },
-    {
-      "source": "YRfIuhnS4",
-      "sourceHandle": "1",
-      "target": "XzWolgr-5",
-      "targetHandle": null,
-      "id": "BdgLJXBk9"
-    },
-    {
-      "source": "XzWolgr-5",
-      "sourceHandle": "1",
-      "target": "DGdizbbma",
-      "targetHandle": null,
-      "id": "nfRfqc-I7"
     },
     {
       "source": "e95328ErK",
@@ -1878,6 +1743,13 @@
       "target": "d7VdU6y0e",
       "targetHandle": null,
       "id": "zvq9wOETO"
+    },
+    {
+      "source": "YRfIuhnS4",
+      "sourceHandle": "1",
+      "target": "krw2Ezrcf",
+      "targetHandle": null,
+      "id": "midterm-subtitles-bypass-local-mux"
     }
   ]
 }
