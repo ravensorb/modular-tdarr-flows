@@ -67,12 +67,12 @@
       }
     },
     {
-      "name": "It's not a movie either, but Is isForeign == true?",
+      "name": "It's not a movie either, but Is is_foreign == true?",
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
       "inputsDB": {
-        "variable": "{{{args.userVariables.library.isForeign}}}",
+        "variable": "{{{args.userVariables.library.is_foreign}}}",
         "value": "true",
         "condition": "=="
       },
@@ -128,18 +128,6 @@
       }
     },
     {
-      "name": "Failed to replace original file, let's try to copy and delete instead.",
-      "sourceRepo": "Community",
-      "pluginName": "comment",
-      "version": "1.0.0",
-      "fpEnabled": true,
-      "id": "ocVciVFsa",
-      "position": {
-        "x": 1441.779279856946,
-        "y": 1020.2859895407569
-      }
-    },
-    {
       "name": "✅✅✅ AUDIO CLEANING COMPLETE ✅✅✅",
       "sourceRepo": "Community",
       "pluginName": "comment",
@@ -173,7 +161,7 @@
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
       "inputsDB": {
-        "variable": "{{{args.userVariables.library.enableControlFlow}}}",
+        "variable": "{{{args.userVariables.library.enable_control_flow}}}",
         "value": "true"
       },
       "fpEnabled": true,
@@ -202,8 +190,8 @@
       "version": "2.0.0",
       "inputsDB": {
         "pluginSourceId": "Community:Tdarr_Plugin_a9he_New_file_size_check",
-        "upperBound": "125",
-        "lowerBound": "75"
+        "upperBound": "140",
+        "lowerBound": "60"
       },
       "fpEnabled": true,
       "id": "kwVAOnYRB",
@@ -218,7 +206,7 @@
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
       "inputsDB": {
-        "variable": "{{{args.userVariables.library.enableControlFlow}}}",
+        "variable": "{{{args.userVariables.library.enable_control_flow}}}",
         "value": "true"
       },
       "fpEnabled": true,
@@ -301,7 +289,7 @@
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
       "inputsDB": {
-        "variable": "{{{args.userVariables.library.enableControlFlow}}}",
+        "variable": "{{{args.userVariables.library.enable_control_flow}}}",
         "value": "true"
       },
       "fpEnabled": true,
@@ -350,7 +338,7 @@
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
       "inputsDB": {
-        "variable": "{{{args.userVariables.library.enableAudioCleaning}}}",
+        "variable": "{{{args.userVariables.library.enable_audio_cleaning}}}",
         "value": "true",
         "condition": "=="
       },
@@ -417,21 +405,6 @@
       }
     },
     {
-      "name": "Input File",
-      "sourceRepo": "Community",
-      "pluginName": "inputFile",
-      "version": "1.0.0",
-      "inputsDB": {
-        "fileAccessChecks": "true"
-      },
-      "fpEnabled": true,
-      "id": "xR8gCEb7_",
-      "position": {
-        "x": 971.6426966454992,
-        "y": -347.7379233473291
-      }
-    },
-    {
       "name": "Is it anime?",
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
@@ -481,18 +454,6 @@
       }
     },
     {
-      "name": "Replace Original File",
-      "sourceRepo": "Community",
-      "pluginName": "replaceOriginalFile",
-      "version": "1.0.0",
-      "fpEnabled": true,
-      "id": "3ljdCJLGm",
-      "position": {
-        "x": 1233.383116383866,
-        "y": 1018.445103146916
-      }
-    },
-    {
       "name": "‼️‼️‼️ AUDIO CLEANING DISABLED  ‼️‼️‼️",
       "sourceRepo": "Community",
       "pluginName": "comment",
@@ -538,45 +499,6 @@
       "position": {
         "x": 1841.498789090928,
         "y": 80.44581725891616
-      }
-    },
-    {
-      "name": "Copy to Working Directory",
-      "sourceRepo": "Community",
-      "pluginName": "copyToWorkDirectory",
-      "version": "1.0.0",
-      "fpEnabled": true,
-      "id": "XSNXsXj2m",
-      "position": {
-        "x": 971.2236626289114,
-        "y": -269.1207602435841
-      }
-    },
-    {
-      "name": "Move To Original Directory",
-      "sourceRepo": "Community",
-      "pluginName": "moveToOriginalDirectory",
-      "version": "1.0.0",
-      "fpEnabled": true,
-      "id": "vr5aLl2cF",
-      "position": {
-        "x": 1443.4849429124358,
-        "y": 1108.3315157752738
-      }
-    },
-    {
-      "name": "Delete Original File",
-      "sourceRepo": "Community",
-      "pluginName": "deleteFile",
-      "version": "1.0.0",
-      "inputsDB": {
-        "fileToDelete": "originalFile"
-      },
-      "fpEnabled": true,
-      "id": "JUgXchjWT",
-      "position": {
-        "x": 1443.11566772866,
-        "y": 1186.6007707112637
       }
     },
     {
@@ -770,13 +692,6 @@
       "id": "a1gk5lQGe"
     },
     {
-      "source": "xR8gCEb7_",
-      "sourceHandle": "1",
-      "target": "XSNXsXj2m",
-      "targetHandle": null,
-      "id": "LiXT4hYtO"
-    },
-    {
       "source": "rmmzJ9UVr",
       "sourceHandle": "1",
       "target": "LDfgoIQyV",
@@ -854,20 +769,6 @@
       "id": "7t-ZIXPWP"
     },
     {
-      "source": "-G67OyKM7",
-      "sourceHandle": "2",
-      "target": "3ljdCJLGm",
-      "targetHandle": null,
-      "id": "eoGEQoiUb"
-    },
-    {
-      "source": "3ljdCJLGm",
-      "sourceHandle": "err1",
-      "target": "ocVciVFsa",
-      "targetHandle": null,
-      "id": "01eOC6pyR"
-    },
-    {
       "source": "xWdoGKRHw",
       "sourceHandle": "1",
       "target": "toqWXjkJT",
@@ -889,34 +790,6 @@
       "id": "Q4rYUGJVS"
     },
     {
-      "source": "ocVciVFsa",
-      "sourceHandle": "1",
-      "target": "vr5aLl2cF",
-      "targetHandle": null,
-      "id": "rGAGzvD2L"
-    },
-    {
-      "source": "vr5aLl2cF",
-      "sourceHandle": "1",
-      "target": "JUgXchjWT",
-      "targetHandle": null,
-      "id": "pn1A6FSk8"
-    },
-    {
-      "source": "JUgXchjWT",
-      "sourceHandle": "1",
-      "target": "FFll-kYBC",
-      "targetHandle": null,
-      "id": "8FAJ_Gb-2"
-    },
-    {
-      "source": "vr5aLl2cF",
-      "sourceHandle": "err1",
-      "target": "EuecZCFiv",
-      "targetHandle": null,
-      "id": "cytz_jCAC"
-    },
-    {
       "source": "LDfgoIQyV",
       "sourceHandle": "1",
       "target": "a1Bb1G9pN",
@@ -936,13 +809,6 @@
       "target": "oumlf8YGO",
       "targetHandle": null,
       "id": "ZmggyRY-v"
-    },
-    {
-      "source": "3ljdCJLGm",
-      "sourceHandle": "1",
-      "target": "FFll-kYBC",
-      "targetHandle": null,
-      "id": "OtMpNt4sB"
     },
     {
       "source": "lzluIcJwO",
@@ -1050,18 +916,18 @@
       "id": "5p2cWbq8n"
     },
     {
-      "source": "XSNXsXj2m",
-      "sourceHandle": "1",
-      "target": "YHHJeAOmS",
-      "targetHandle": null,
-      "id": "qaMC6p2Rg"
-    },
-    {
       "source": "YHHJeAOmS",
       "sourceHandle": "1",
       "target": "x_65k3lxU",
       "targetHandle": null,
       "id": "9Ox_ktypf"
+    },
+    {
+      "source": "-G67OyKM7",
+      "sourceHandle": "2",
+      "target": "UcEeH0Wum",
+      "targetHandle": null,
+      "id": "-G67OyKM7-2-UcEeH0Wum-None"
     }
   ]
 }
