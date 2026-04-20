@@ -9,14 +9,14 @@
       "sourceRepo": "Community",
       "pluginName": "ffmpegCommandCustomArguments",
       "version": "1.0.0",
+      "inputsDB": {
+        "outputArguments": "-vf yadif=1:-1:0"
+      },
+      "fpEnabled": true,
       "id": "DbQIr5wUP",
       "position": {
         "x": 828,
         "y": 648
-      },
-      "fpEnabled": true,
-      "inputsDB": {
-        "outputArguments": "-vf yadif=1:-1:0"
       }
     },
     {
@@ -36,7 +36,7 @@
       }
     },
     {
-      "name": "Interlaced File Detected",
+      "name": "Interlaced Video Detected",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
@@ -52,14 +52,14 @@
       "sourceRepo": "Community",
       "pluginName": "ffmpegCommandCustomArguments",
       "version": "1.0.0",
+      "inputsDB": {
+        "outputArguments": "-vf yadif_cuda=1:-1:0"
+      },
+      "fpEnabled": true,
       "id": "31yo1LBVy",
       "position": {
         "x": 612,
         "y": 660
-      },
-      "fpEnabled": true,
-      "inputsDB": {
-        "outputArguments": "-vf yadif_cuda=1:-1:0"
       }
     },
     {
@@ -67,14 +67,14 @@
       "sourceRepo": "Community",
       "pluginName": "ffmpegCommandCustomArguments",
       "version": "1.0.0",
+      "inputsDB": {
+        "outputArguments": "-maxrate 20250k -bufsize 27000k"
+      },
+      "fpEnabled": true,
       "id": "bCk6iae4A",
       "position": {
         "x": 504,
         "y": 804
-      },
-      "fpEnabled": true,
-      "inputsDB": {
-        "outputArguments": "-maxrate 20250k -bufsize 27000k"
       }
     },
     {
@@ -82,14 +82,14 @@
       "sourceRepo": "Community",
       "pluginName": "ffmpegCommandCustomArguments",
       "version": "1.0.0",
+      "inputsDB": {
+        "outputArguments": "-maxrate 9000k -bufsize 18000k"
+      },
+      "fpEnabled": true,
       "id": "mMuApCxwM",
       "position": {
         "x": 168,
         "y": 828
-      },
-      "fpEnabled": true,
-      "inputsDB": {
-        "outputArguments": "-maxrate 9000k -bufsize 18000k"
       }
     },
     {
@@ -1546,14 +1546,14 @@
       "sourceRepo": "Community",
       "pluginName": "ffmpegCommandCustomArguments",
       "version": "1.0.0",
+      "inputsDB": {
+        "outputArguments": "-pix_fmt p010le -colorspace bt2020nc -color_primaries bt2020 -color_trc smpte2084 -color_range tv"
+      },
+      "fpEnabled": true,
       "id": "v1q5hOhmN",
       "position": {
         "x": -12,
         "y": 1128
-      },
-      "fpEnabled": true,
-      "inputsDB": {
-        "outputArguments": "-pix_fmt p010le -colorspace bt2020nc -color_primaries bt2020 -color_trc smpte2084 -color_range tv"
       }
     },
     {
@@ -1561,43 +1561,43 @@
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "jwdDpfw5U",
       "position": {
         "x": -120,
         "y": 1056
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "Set Bit Rate and Buffer Size for 720p Resolution",
       "sourceRepo": "Community",
       "pluginName": "ffmpegCommandCustomArguments",
       "version": "1.0.0",
+      "inputsDB": {
+        "outputArguments": "-maxrate 5000k -bufsize 10000k"
+      },
+      "fpEnabled": true,
       "id": "BVxkRqlsL",
       "position": {
         "x": -72,
         "y": 804
-      },
-      "fpEnabled": true,
-      "inputsDB": {
-        "outputArguments": "-maxrate 5000k -bufsize 10000k"
       }
     },
     {
-      "name": "Check Stream Property",
+      "name": "Is Video Interlaced?",
       "sourceRepo": "Community",
       "pluginName": "checkStreamProperty",
       "version": "1.0.0",
+      "inputsDB": {
+        "streamType": "video",
+        "propertyToCheck": "field_order",
+        "valuesToMatch": "tt,bb,tb,bt"
+      },
+      "fpEnabled": true,
       "id": "S6ACQwBCx",
       "position": {
         "x": 516,
         "y": 468
-      },
-      "fpEnabled": true,
-      "inputsDB": {
-        "streamType": "video",
-        "propertyToCheck": "scanType",
-        "valuesToMatch": "progressive"
       }
     },
     {
@@ -1605,14 +1605,14 @@
       "sourceRepo": "Community",
       "pluginName": "ffmpegCommandCustomArguments",
       "version": "1.0.0",
+      "inputsDB": {
+        "outputArguments": "-preset p7"
+      },
+      "fpEnabled": true,
       "id": "Ag8fwxry0",
       "position": {
         "x": -120,
         "y": 1752
-      },
-      "fpEnabled": true,
-      "inputsDB": {
-        "outputArguments": "-preset p7"
       }
     },
     {
@@ -1620,14 +1620,14 @@
       "sourceRepo": "Community",
       "pluginName": "ffmpegCommandCustomArguments",
       "version": "1.0.0",
+      "inputsDB": {
+        "outputArguments": "-preset p5"
+      },
+      "fpEnabled": true,
       "id": "cePYBxD_x",
       "position": {
         "x": -276,
         "y": 1692
-      },
-      "fpEnabled": true,
-      "inputsDB": {
-        "outputArguments": "-preset p5"
       }
     },
     {
@@ -1635,14 +1635,14 @@
       "sourceRepo": "Community",
       "pluginName": "ffmpegCommandCustomArguments",
       "version": "1.0.0",
+      "inputsDB": {
+        "outputArguments": "-preset p3"
+      },
+      "fpEnabled": true,
       "id": "wR6-apUdR",
       "position": {
         "x": -432,
         "y": 1596
-      },
-      "fpEnabled": true,
-      "inputsDB": {
-        "outputArguments": "-preset p3"
       }
     },
     {
@@ -1650,14 +1650,14 @@
       "sourceRepo": "Community",
       "pluginName": "ffmpegCommandCustomArguments",
       "version": "1.0.0",
+      "inputsDB": {
+        "outputArguments": "-preset p2"
+      },
+      "fpEnabled": true,
       "id": "XHIbDNB34",
       "position": {
         "x": -612,
         "y": 1560
-      },
-      "fpEnabled": true,
-      "inputsDB": {
-        "outputArguments": "-preset p2"
       }
     },
     {
@@ -1665,14 +1665,14 @@
       "sourceRepo": "Community",
       "pluginName": "ffmpegCommandCustomArguments",
       "version": "1.0.0",
+      "inputsDB": {
+        "outputArguments": "-vf format=p010le"
+      },
+      "fpEnabled": true,
       "id": "2I6odrL7B",
       "position": {
         "x": 396,
         "y": 1104
-      },
-      "fpEnabled": true,
-      "inputsDB": {
-        "outputArguments": "-vf format=p010le"
       }
     }
   ],
@@ -2835,9 +2835,9 @@
     {
       "source": "S6ACQwBCx",
       "sourceHandle": "2",
-      "target": "MBqMPkmrR",
+      "target": "hgAJYApF4",
       "targetHandle": null,
-      "id": "qGsHOzsGz_fix2"
+      "id": "auto_interlace_skip_to_reorder"
     }
   ]
 }
